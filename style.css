@@ -67,6 +67,7 @@ nav,
 section,
 summary {
 	display: block;
+    
 }
 
 audio,
@@ -111,8 +112,9 @@ dfn {
 
 h1 {
     color:red;
+    font-family: 'Arial';
 	font-size: 2em;
-	margin: 0.67em 0;
+	margin: 0.15em 0;
 }
 
 mark {
@@ -675,6 +677,7 @@ a:hover, a:active {
 	content: "";
 	display: table;
 	table-layout: fixed;
+    
 }
 
 .clear:after,
@@ -708,6 +711,41 @@ a:hover, a:active {
 	display: block;
 }
 
+.entry-title{
+    color:black;
+    font-family: "freight-text-pro",serif;
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+    width:75%;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entry-meta{
+    border-top: 1px solid #e2e2e2;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #464646;
+    font-family: 'Avenir Next',sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;        
+}
+.entry-content{
+    font-family: "adobe-caslon-pro";
+    line-height: 1.63;
+    font-size: 1.225rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width:60%;
+}
+.post-img{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hentry {
 	margin: 0 0 1.5em;
 }
@@ -717,9 +755,7 @@ a:hover, a:active {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
 }
 
 .page-links {
