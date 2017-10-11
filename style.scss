@@ -1,0 +1,64 @@
+/*!
+Theme Name: New School Free Press
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: new-school-free-press
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# POST STYLES
+--------------------------------------------------------------*/
+
+
+//RESET
+@import 'reset';
+
+//COLOURS
+$base: #333;
+
+//FONTS
+$font-hed: "freight-text-pro",serif;
+$font-p: 'adobe-caslon-pro', serif;
+
+/*ARTICLE POST STYLES*/
+.entry-title{
+    color:$base;
+    font: $font-hed;
+    font-size: 4.5rem;
+    line-height: 4.875rem;
+    width:75%;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entry-meta{
+    border-top: 1px solid #e2e2e2;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #464646;
+    font-family: 'Avenir Next',sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;        
+}
+.entry-content{
+    font:$font-p;
+    line-height: 1.63;
+    font-size: 1.225rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width:60%;
+}
+.post-img{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+}
