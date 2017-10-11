@@ -22,7 +22,11 @@
         
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php new_school_free_press_posted_on(); ?>
+        <?php if ( function_exists( 'coauthors_posts_links' ) ) {
+            coauthors_posts_links();
+        } else {
+            the_author_posts_link();
+        } ?>
 		</div><!-- .entry-meta -->
 
 		<?php
