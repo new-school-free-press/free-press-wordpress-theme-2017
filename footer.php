@@ -44,7 +44,7 @@
 					<li> EUGENE LANG </li>
                     <li> PARSONS </li>
                     <li> MANNES </li>
-                    <li> JASS </li>
+                    <li> JAZZ </li>
                     <li> DRAMA </li>
                     
                 </ul>
