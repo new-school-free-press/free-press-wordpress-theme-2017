@@ -64,7 +64,7 @@ $font-p: 'adobe-caslon-pro', serif;
 }
 
 .footer-container {
-    background-color: gainsboro !important;
+    background-color: #e5e5e5;
     font-family: "Avenir Next", sans-serif;
 }
     
@@ -74,6 +74,7 @@ $font-p: 'adobe-caslon-pro', serif;
 	   float: left;
         padding: 10px 15px;
         font-size: 11px;
+        line-height: 1.5em;
     }
 
     .column2 {
@@ -82,6 +83,7 @@ $font-p: 'adobe-caslon-pro', serif;
 	   padding: 10px 15px;
 	   margin: 0px 5px 5px 5px;
         font-size: 11px;
+        line-height: 1.5em;
     }
 
     .column3 {
@@ -90,6 +92,7 @@ $font-p: 'adobe-caslon-pro', serif;
 	    float: left;
         margin: 0px 5px 5px 5px;
         font-size: 11px;
+        line-height: 1.5em;
     }
 
     .column4 {
@@ -97,18 +100,23 @@ $font-p: 'adobe-caslon-pro', serif;
 	   padding: 10px 15px;
 	   float: left;
         font-size: 11px;
+        line-height: 1.5em;
     }
     
     h3 {
     width: 200px;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: "freight-text-pro",serif;
+    font-style: italic;
+    color: gray;
    
     }
 
     
 hr {
     border-bottom:1px;
-    border-bottom-style: solid; 
+    border-bottom-style: solid;
+    color: gray;
 }
 

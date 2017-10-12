@@ -132,42 +132,50 @@ a:focus {
   margin-right: auto; }
 
 .footer-container {
-  background-color: gainsboro !important;
+  background-color: #e5e5e5;
   font-family: "Avenir Next", sans-serif; }
 
 .column1 {
   width: 200px;
   float: left;
   padding: 10px 15px;
-  font-size: 11px; }
+  font-size: 11px;
+  line-height: 1.5em; }
 
 .column2 {
   width: 200px;
   float: left;
   padding: 10px 15px;
   margin: 0px 5px 5px 5px;
-  font-size: 11px; }
+  font-size: 11px;
+  line-height: 1.5em; }
 
 .column3 {
   width: 200px;
   padding: 10px 15px;
   float: left;
   margin: 0px 5px 5px 5px;
-  font-size: 11px; }
+  font-size: 11px;
+  line-height: 1.5em; }
 
 .column4 {
   width: 200px;
   padding: 10px 15px;
   float: left;
-  font-size: 11px; }
+  font-size: 11px;
+  line-height: 1.5em; }
 
 h3 {
   width: 200px;
   font-family: sans-serif;
-  font-size: 13px; }
+  font-size: 15px;
+  font-family: "freight-text-pro",serif;
+  font-style: italic;
+  color: gray; }
 
 hr {
   border-bottom: 1px;
-  border-bottom-style: solid; }
+  border-bottom-style: solid;
+  color: gray; }
 
 /*# sourceMappingURL=style.css.map */

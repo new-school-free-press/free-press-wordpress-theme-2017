@@ -21,9 +21,9 @@
                 <div class="column1">
                  <h3>Arts&ampCulture </h3> <hr>
                 <ul>
-					<li> Fashion </li>
-                    <li> Music </li>
-                    <li> Video </li>
+					<li> FASHION </li>
+                    <li> MUSIC </li>
+                    <li> VIDEO </li>
                 </ul>
                 </div>
     
@@ -31,9 +31,9 @@
             <div class="column2">
                     <h3>News</h3> <hr>
                 <ul>
-					<li> University </li>
-                    <li> Politics </li>
-                    <li> New York </li>
+					<li> UNIVERSITY  </li>
+                    <li> POLITICS </li>
+                    <li> NEW YORK </li>
                 </ul>
             </div>
             
@@ -41,11 +41,11 @@
          <div class="column3">
                     <h3>TNS</h3> <hr>
                 <ul>
-					<li> Eugene Lang </li>
-                    <li> Parsons </li>
-                    <li> Mannes </li>
-                    <li> Jazz </li>
-                    <li> Drama </li>
+					<li> EUGENE LANG </li>
+                    <li> PARSONS </li>
+                    <li> MANNES </li>
+                    <li> JASS </li>
+                    <li> DRAMA </li>
                     
                 </ul>
           </div>
@@ -53,11 +53,11 @@
             <div class="column4">
                     <h3>Opinion</h3> <hr>
                 <ul>
-					<li> Editorials </li>
-                    <li> Opinions </li>
-                    <li> Submit </li>
-                    <li> Contact </li>
-                    <li> Masthead </li>
+					<li> EDITORIALS </li>
+                    <li> OPINIONS </li>
+                    <li> SUBMIT </li>
+                    <li> CONTACT </li>
+                    <li> MASTHEAD </li>
                     
                 </ul>
           </div>
