@@ -28,6 +28,11 @@ $font-hed: "freight-text-pro",serif;
 $font-p: 'adobe-caslon-pro', serif;
 
 /*ARTICLE POST STYLES*/
+.article-content{
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+}
 .entry-title{
     color:$base;
     font: $font-hed;
@@ -35,8 +40,7 @@ $font-p: 'adobe-caslon-pro', serif;
     line-height: 4.875rem;
     width:75%;
     font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
 }
 .entry-meta{
     border-top: 1px solid #e2e2e2;
@@ -44,21 +48,18 @@ $font-p: 'adobe-caslon-pro', serif;
     padding-bottom: 14px;
     color: #464646;
     font-family: 'Avenir Next',sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     width:75%;        
 }
 .entry-content{
     font:$font-p;
     line-height: 1.63;
     font-size: 1.225rem;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     padding-top: 25px;
     width:60%;
 }
+
 .post-img{
-    width:75%;
-    margin-left: auto;
-    margin-right: auto;
+    width:65%;
 }
