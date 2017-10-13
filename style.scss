@@ -27,11 +27,14 @@ $base: #333;
 $font-hed: "freight-text-pro",serif;
 $font-p: 'adobe-caslon-pro', serif;
 
-/*ARTICLE POST STYLES*/
+//ARTICLE STYLES
 .article-content{
     width: 65%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .entry-title{
     color:$base;
@@ -64,6 +67,7 @@ $font-p: 'adobe-caslon-pro', serif;
     width:65%;
 }
 
+//FOOTER STYLES
 .footer-container {
     background-color: #e5e5e5;
     font-family: "Avenir Next", sans-serif;

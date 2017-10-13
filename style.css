@@ -96,11 +96,13 @@ b, strong {
 a:focus {
   outline: none; }
 
-/*ARTICLE POST STYLES*/
 .article-content {
   width: 65%;
-  margin-right: auto;
-  margin-left: auto; }
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .entry-title {
   color: #333;

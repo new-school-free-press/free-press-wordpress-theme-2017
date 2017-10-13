@@ -13,7 +13,7 @@
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="article-container">
+
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -65,7 +65,6 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-    </div>
 	<footer class="entry-footer">
 		<?php new_school_free_press_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
