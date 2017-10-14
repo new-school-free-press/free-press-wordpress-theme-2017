@@ -35,7 +35,7 @@
 
 		<?php
 		endif; ?>
-            <div class="post-img">
+            <div class="entry-img">
             <?php 
         if (has_post_thumbnail()) {
             the_post_thumbnail( 'full' );

@@ -107,7 +107,6 @@ a:focus {
   font: "freight-text-pro", serif;
   font-size: 4.5rem;
   line-height: 4.875rem;
-  width: 75%;
   font-weight: 400;
   text-align: left; }
 
@@ -117,8 +116,7 @@ a:focus {
   padding-bottom: 14px;
   color: #464646;
   font-family: 'Avenir Next',sans-serif;
-  text-align: left;
-  width: 75%; }
+  text-align: left; }
 
 .entry-content {
   font: "adobe-caslon-pro", serif;
@@ -129,7 +127,7 @@ a:focus {
   padding-top: 25px;
   width: 60%; }
 
-.post-img {
+.entry-img {
   width: 65%; }
 
 .footer-container {

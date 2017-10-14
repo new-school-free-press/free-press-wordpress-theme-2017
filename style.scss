@@ -40,18 +40,17 @@ $font-p: 'adobe-caslon-pro', serif;
     font: $font-hed;
     font-size: 4.5rem;
     line-height: 4.875rem;
-    width:75%;
     font-weight: 400;
     text-align: left;
 }
+
 .entry-meta{
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
     color: #464646;
     font-family: 'Avenir Next',sans-serif;
-    text-align: left;
-    width:75%;        
+    text-align: left;       
 }
 .entry-content{
     font:$font-p;
@@ -63,7 +62,7 @@ $font-p: 'adobe-caslon-pro', serif;
     width:60%;
 }
 
-.post-img{
+.entry-img{
     width:65%;
 }
 
