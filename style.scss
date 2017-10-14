@@ -20,6 +20,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 //RESET
 @import 'reset';
 
+
 //COLOURS
 $base: #333;
 
@@ -29,12 +30,10 @@ $font-p: 'adobe-caslon-pro', serif;
 
 //ARTICLE STYLES
 .article-content{
-    width: 65%;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .entry-title{
     color:$base;
@@ -56,6 +55,7 @@ $font-p: 'adobe-caslon-pro', serif;
 }
 .entry-content{
     font:$font-p;
+    margin-bottom: 17px;
     line-height: 1.63;
     font-size: 1.225rem;
     text-align: left;
