@@ -25,8 +25,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 $base: #333;
 
 //FONTS
-$font-hed: "freight-text-pro",serif;
-$font-p: 'adobe-caslon-pro', serif;
+$typekit-hed: "freight-text-pro";
+$typekit-body: "adobe-caslon-pro";
 
 //ARTICLE STYLES
 .article-content{
@@ -37,7 +37,7 @@ $font-p: 'adobe-caslon-pro', serif;
 }
 .entry-title{
     color:$base;
-    font: $font-hed;
+    font: $typekit-hed;
     font-size: 4.5rem;
     line-height: 4.875rem;
     font-weight: 400;
@@ -53,7 +53,7 @@ $font-p: 'adobe-caslon-pro', serif;
     text-align: left;       
 }
 .entry-content{
-    font:$font-p;
+    font:$typekit-body;
     margin-bottom: 17px;
     line-height: 1.63;
     font-size: 1.225rem;

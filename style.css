@@ -104,7 +104,7 @@ a:focus {
 
 .entry-title {
   color: #333;
-  font: "freight-text-pro", serif;
+  font: "freight-text-pro";
   font-size: 4.5rem;
   line-height: 4.875rem;
   font-weight: 400;
@@ -119,7 +119,7 @@ a:focus {
   text-align: left; }
 
 .entry-content {
-  font: "adobe-caslon-pro", serif;
+  font: "adobe-caslon-pro";
   margin-bottom: 17px;
   line-height: 1.63;
   font-size: 1.225rem;
