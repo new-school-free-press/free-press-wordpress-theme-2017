@@ -61,9 +61,8 @@
                     
                 </ul>
           </div>
-
-    
-            
+     
+<!--
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'new-school-free-press' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'new-school-free-press' ), 'WordPress' );
@@ -75,6 +74,7 @@
                  
                  
 			?>
+-->
 		</div><!-- .site-footer -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

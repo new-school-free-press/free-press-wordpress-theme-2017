@@ -20,12 +20,14 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 //RESET
 @import 'reset';
 
+
 //COLOURS
 $base: #333;
 
 //FONTS
-$font-hed: "freight-text-pro",serif;
-$font-p: 'adobe-caslon-pro', serif;
+$typekit-hed: "freight-text-pro";
+$typekit-body: "adobe-caslon-pro";
+
 
 /*ARTICLE POST STYLES*/
 
@@ -38,38 +40,51 @@ $font-p: 'adobe-caslon-pro', serif;
 .entry-title{
     color: #333;
     font: "freight-text-pro", serif;
+}
+
+//ARTICLE STYLES
+.article-content{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.entry-title{
+    color:$base;
+    font: $typekit-hed;
     font-size: 4.5rem;
     line-height: 4.875rem;
-    width:75%;
     font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
 }
+
 .entry-meta{
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
     color: #464646;
     font-family: 'Avenir Next',sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width:75%;        
+    text-align: left;       
 }
 .entry-content{
-    font:$font-p;
+    font:$typekit-body;
+    margin-bottom: 17px;
     line-height: 1.63;
     font-size: 1.225rem;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     padding-top: 25px;
     width:60%;
 }
-.post-img{
-    width:75%;
-    margin-left: auto;
-    margin-right: auto;
+
+.entry-img{
+    width:65%;
 }
 
+//FOOTER STYLES
+.site-footer{
+    background-color: #e5e5e5;
+}
+    
 .footer-container {
     background-color: #e5e5e5;
     font-family: "Avenir Next", sans-serif;
@@ -126,4 +141,3 @@ hr {
     border-bottom-style: solid;
     color: gray;
 }
-
