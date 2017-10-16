@@ -28,9 +28,16 @@ $font-hed: "freight-text-pro",serif;
 $font-p: 'adobe-caslon-pro', serif;
 
 /*ARTICLE POST STYLES*/
+
+.primary{
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
 .entry-title{
-    color:$base;
-    font: $font-hed;
+    color: #333;
+    font: "freight-text-pro", serif;
     font-size: 4.5rem;
     line-height: 4.875rem;
     width:75%;

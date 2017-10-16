@@ -97,6 +97,10 @@ a:focus {
   outline: none; }
 
 /*ARTICLE POST STYLES*/
+.primary {
+  width: 100%;
+  margin: 0 auto; }
+
 .entry-title {
   color: #333;
   font: "freight-text-pro", serif;
