@@ -28,6 +28,20 @@ $base: #333;
 $typekit-hed: "freight-text-pro";
 $typekit-body: "adobe-caslon-pro";
 
+
+/*ARTICLE POST STYLES*/
+
+.primary{
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+.entry-title{
+    color: #333;
+    font: "freight-text-pro", serif;
+}
+
 //ARTICLE STYLES
 .article-content{
     display: -webkit-flex;
@@ -70,6 +84,7 @@ $typekit-body: "adobe-caslon-pro";
 .site-footer{
     background-color: #e5e5e5;
 }
+    
 .footer-container {
     background-color: #e5e5e5;
     font-family: "Avenir Next", sans-serif;
