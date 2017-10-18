@@ -118,6 +118,10 @@ a:focus {
   line-height: 4.875rem;
   font-weight: 400;
   text-align: left; }
+  @media screen and (max-width: 320px) {
+    .entry-title {
+      width: 100px;
+      font-size: 2rem; } }
 
 .entry-meta {
   border-top: 1px solid #e2e2e2;
@@ -135,62 +139,19 @@ a:focus {
   text-align: left;
   padding-top: 25px;
   width: 60%; }
+  @media screen and (max-width: 320px) {
+    .entry-content {
+      width: 85%;
+      padding: 10px; } }
 
 .entry-img {
-  width: 65%; }
+  width: 10%;
+  height: auto; }
+  @media screen and (max-width: 320px) {
+    .entry-img {
+      width: 100px; } }
 
 .site-footer {
   background-color: #e5e5e5; }
-
-.footer-container {
-  background-color: #e5e5e5;
-  font-family: "Avenir Next", sans-serif; }
-
-.footer-container {
-  background-color: #e5e5e5;
-  font-family: "Avenir Next", sans-serif; }
-
-.column1 {
-  width: 200px;
-  float: left;
-  padding: 10px 15px;
-  font-size: 11px;
-  line-height: 1.5em; }
-
-.column2 {
-  width: 200px;
-  float: left;
-  padding: 10px 15px;
-  margin: 0px 5px 5px 5px;
-  font-size: 11px;
-  line-height: 1.5em; }
-
-.column3 {
-  width: 200px;
-  padding: 10px 15px;
-  float: left;
-  margin: 0px 5px 5px 5px;
-  font-size: 11px;
-  line-height: 1.5em; }
-
-.column4 {
-  width: 200px;
-  padding: 10px 15px;
-  float: left;
-  font-size: 11px;
-  line-height: 1.5em; }
-
-h3 {
-  width: 200px;
-  font-family: sans-serif;
-  font-size: 15px;
-  font-family: "freight-text-pro",serif;
-  font-style: italic;
-  color: gray; }
-
-hr {
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  color: gray; }
 
 /*# sourceMappingURL=style.css.map */

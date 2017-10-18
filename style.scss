@@ -16,6 +16,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 # POST STYLES
 --------------------------------------------------------------*/
 
+//MEDIA QUERY
+$break-small: 320px;
+$break-large: 1200px;
 
 //RESET
 @import 'reset';
@@ -56,6 +59,11 @@ $typekit-body: "adobe-caslon-pro";
     line-height: 4.875rem;
     font-weight: 400;
     text-align: left;
+        
+        @media screen and (max-width: $break-small) {
+        width: 100px;
+        font-size: 2rem;
+        }
 }
 
 .entry-meta{
@@ -66,6 +74,7 @@ $typekit-body: "adobe-caslon-pro";
     font-family: 'Avenir Next',sans-serif;
     text-align: left;       
 }
+
 .entry-content{
     font:$typekit-body;
     margin-bottom: 17px;
@@ -74,10 +83,19 @@ $typekit-body: "adobe-caslon-pro";
     text-align: left;
     padding-top: 25px;
     width:60%;
+    
+        @media screen and (max-width: $break-small) {
+        width: 85%;
+        padding: 10px;
+        }
 }
 
 .entry-img{
-    width:65%;
+    width:10%;
+    height: auto;
+        @media screen and (max-width: $break-small) {
+        width: 100px;
+        }
 }
 
 //FOOTER STYLES
@@ -85,63 +103,3 @@ $typekit-body: "adobe-caslon-pro";
     background-color: #e5e5e5;
 }
     
-.footer-container {
-    background-color: #e5e5e5;
-    font-family: "Avenir Next", sans-serif;
-}
-.footer-container {
-    background-color: #e5e5e5;
-    font-family: "Avenir Next", sans-serif;
-}
-    
-
-    .column1 {
-	   width: 200px;
-	   float: left;
-        padding: 10px 15px;
-        font-size: 11px;
-        line-height: 1.5em;
-    }
-
-    .column2 {
-	   width: 200px; 
-	   float: left;
-	   padding: 10px 15px;
-	   margin: 0px 5px 5px 5px;
-        font-size: 11px;
-        line-height: 1.5em;
-    }
-
-    .column3 {
-        width: 200px;
-	    padding: 10px 15px;
-	    float: left;
-        margin: 0px 5px 5px 5px;
-        font-size: 11px;
-        line-height: 1.5em;
-    }
-
-    .column4 {
-	   width: 200px;
-	   padding: 10px 15px;
-	   float: left;
-        font-size: 11px;
-        line-height: 1.5em;
-    }
-    
-    h3 {
-    width: 200px;
-    font-family: sans-serif;
-    font-size: 15px;
-    font-family: "freight-text-pro",serif;
-    font-style: italic;
-    color: gray;
-   
-    }
-
-    
-hr {
-    border-bottom:1px;
-    border-bottom-style: solid;
-    color: gray;
-}
