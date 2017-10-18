@@ -137,6 +137,10 @@ a:focus {
   background-color: #e5e5e5;
   font-family: "Avenir Next", sans-serif; }
 
+.footer-container {
+  background-color: #e5e5e5;
+  font-family: "Avenir Next", sans-serif; }
+
 .column1 {
   width: 200px;
   float: left;
