@@ -20,6 +20,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 $break-small: 320px;
 $break-large: 1200px;
 
+
 //RESET
 @import 'reset';
 
@@ -47,32 +48,39 @@ $typekit-body: "adobe-caslon-pro";
 
 //ARTICLE STYLES
 .article-content{
+    max-width: 50rem;
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.entry-title{
+
+.entry-title {
     color:$base;
     font: $typekit-hed;
     font-size: 4.5rem;
     line-height: 4.875rem;
     font-weight: 400;
     text-align: left;
-        
-        @media screen and (max-width: $break-small) {
-        width: 100px;
-        font-size: 2rem;
-        }
 }
 
-.entry-meta{
+.entry-header{
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.entry-meta{ 
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
     color: #464646;
     font-family: 'Avenir Next',sans-serif;
-    text-align: left;       
+    text-align: left;  
 }
 
 .entry-content{
@@ -83,23 +91,13 @@ $typekit-body: "adobe-caslon-pro";
     text-align: left;
     padding-top: 25px;
     width:60%;
-    
-        @media screen and (max-width: $break-small) {
-        width: 85%;
-        padding: 10px;
-        }
 }
 
-.entry-img{
-    width:10%;
-    height: auto;
-        @media screen and (max-width: $break-small) {
-        width: 100px;
-        }
-}
+
 
 //FOOTER STYLES
 .site-footer{
     background-color: #e5e5e5;
 }
     
+
