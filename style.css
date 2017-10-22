@@ -96,16 +96,13 @@ b, strong {
 a:focus {
   outline: none; }
 
-/*ARTICLE POST STYLES*/
-.primary {
-  width: 100%;
-  margin: 0 auto; }
-
-.entry-title {
-  color: #333;
-  font: "freight-text-pro", serif; }
-
 .article-content {
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.entry-header {
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
@@ -122,18 +119,12 @@ a:focus {
 .arts-entry-title {
   color: orange; }
 
-.entry-header {
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
 img {
-  width: 90%;
+  width: 85%;
   height: auto; }
 
 .entry-meta {
-  width: 90%;
+  width: 85%;
   border-top: 1px solid #e2e2e2;
   padding-top: 14px;
   padding-bottom: 14px;
