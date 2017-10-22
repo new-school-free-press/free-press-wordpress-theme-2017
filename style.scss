@@ -48,7 +48,6 @@ $typekit-body: "adobe-caslon-pro";
 
 //ARTICLE STYLES
 .article-content{
-    max-width: 50rem;
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +64,7 @@ $typekit-body: "adobe-caslon-pro";
 }
 
 .entry-header{
-    
+ 
     img{
         max-width: 100%;
         height: auto;
