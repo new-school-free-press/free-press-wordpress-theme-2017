@@ -62,11 +62,6 @@ $typekit-body: "adobe-caslon-pro";
     line-height: 4.875rem;
     font-weight: 400;
     text-align: left;
-        
-        @media screen and (max-width: $break-small) {
-        width: 100px;
-        font-size: 2rem;
-        }
 }
 
 .entry-header{
@@ -96,11 +91,6 @@ $typekit-body: "adobe-caslon-pro";
     text-align: left;
     padding-top: 25px;
     width:60%;
-    
-        @media screen and (max-width: $break-small) {
-        width: 85%;
-        padding: 10px;
-        }
 }
 
 
