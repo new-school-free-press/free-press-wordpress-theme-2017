@@ -35,13 +35,13 @@
 
 		<?php
 		endif; ?>
-            <div class="entry-img">
+            
             <?php 
         if (has_post_thumbnail()) {
             the_post_thumbnail( 'full' );
             }
             ?>
-            </div>
+           
 	</header><!-- .entry-header -->
     
 	<div class="entry-content">
