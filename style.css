@@ -106,7 +106,6 @@ a:focus {
   font: "freight-text-pro", serif; }
 
 .article-content {
-  max-width: 50rem;
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
