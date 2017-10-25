@@ -16,9 +16,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 # POST STYLES
 --------------------------------------------------------------*/
 
+<<<<<<< HEAD
 //MEDIA QUERIES
 
 
+=======
+>>>>>>> 52aa12cec616e69b874f29c91e20d37d8e2c3134
 //RESET
 @import 'reset';
 
@@ -31,11 +34,14 @@ $typekit-hed: "freight-text-pro";
 $typekit-body: "adobe-caslon-pro";
 
 
+<<<<<<< HEAD
 .entry-title{
     color: #333;
     font: "freight-text-pro", serif;
 }
 
+=======
+>>>>>>> 52aa12cec616e69b874f29c91e20d37d8e2c3134
 //ARTICLE STYLES
 
 .site-header{
@@ -80,6 +86,13 @@ nav{
     flex-wrap: wrap;
 }
 
+.entry-header{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .entry-title {
     color:$base;
     font: $typekit-hed;
@@ -94,20 +107,13 @@ nav{
     color:orange;
 }
 
-.entry-header{
-    display: -webkit-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 img{
-    width:90%;
+    width:85%;
     height: auto;
     
 }
 .entry-meta{ 
-     width: 90%;
+    width: 85%;
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -125,7 +131,6 @@ img{
     padding-top: 25px;
     width:60%;
 }
-
 
 
 //FOOTER STYLES
