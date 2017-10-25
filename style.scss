@@ -86,6 +86,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+   
 }
 
 .entry-header{
@@ -126,8 +127,7 @@ img{
     color:$base;
     font-family: 'Avenir Next',sans-serif;
     text-align: left; 
-     @include breakpoint(1024) { 
-        
+     @include breakpoint(1024) {   
     }  
 }
 
@@ -140,9 +140,8 @@ img{
     padding-top: 25px;
     width:85%;
      @include breakpoint(1024) { 
-        width: 60%;
-    }   
-    
+        width:65%;    
+}
 }
 
 //FOOTER STYLES
