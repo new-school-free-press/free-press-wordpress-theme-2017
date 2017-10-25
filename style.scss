@@ -31,20 +31,48 @@ $typekit-hed: "freight-text-pro";
 $typekit-body: "adobe-caslon-pro";
 
 
-/*ARTICLE POST STYLES*/
-
-.primary{
-    width: 100%;
-    margin: 0 auto;
-   
-}
-
 .entry-title{
     color: #333;
     font: "freight-text-pro", serif;
 }
 
 //ARTICLE STYLES
+
+.site-header{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:90%;
+}
+
+
+nav{
+	padding: 5em;
+	font-family: 'avenir', sans-serif;
+	font-size: 17px;
+    
+    ul{
+        text-align: justify;
+        
+    }
+
+     li{
+        display: inline-block; 
+        text-decoration: none;
+        color: #000000;
+	   
+    }
+    
+    ul:after{
+        content: '';
+        width: 100%; 
+        display: inline-block;
+    }
+
+     
+}
+
 .article-content{
     display: -webkit-flex;
     justify-content: center;
@@ -59,6 +87,7 @@ $typekit-body: "adobe-caslon-pro";
     line-height: 4.875rem;
     font-weight: 400;
     text-align: left;
+    width: 90%;
 }
 
 .arts-entry-title{
@@ -103,5 +132,45 @@ img{
 .site-footer{
     background-color: #e5e5e5;
 }
-    
 
+
+    
+.emailinput{
+    width: 75%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 0;
+    background: #ffffff;
+    color: #000000;
+    border-bottom: solid;
+    border-radius: 0;
+    position: relative;
+    right: 55px;
+}
+
+@mixin breakpoint($point) {
+    // assumes 16px = 1em
+    // make more (or less) of these as needed
+  @if $point == 320 {
+    @media screen and (min-width: 16em) { @content; } // 448
+  }
+  @if $point == 1200 {
+    @media screen and (min-width: 200em) { @content; } // 600
+  }
+  @if $point == 800 {
+    @media screen and (min-width: 50em) { @content; } // 800
+  }
+}  
+    
+.thing { 
+    width: 100%; // this is the width for screens narrower than 600
+    border: 1px solid black;
+    padding: 0.5em;
+    @include breakpoint(320) { // width for screens > 600px 
+    width: 300px;
+    }
+  @include breakpoint(1200) { // width for screens > 700px 
+    width: 25%;
+    margin-left: 1em;
+  }
+}

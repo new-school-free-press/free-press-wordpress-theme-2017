@@ -27,7 +27,12 @@
                  
                  
 			?>
+<div id="footersignup">
 
+
+
+<input type="email" name="contact[EMAIL]" id="emailinput" placeholder>
+        </div>
 		<!-- .site-footer -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
