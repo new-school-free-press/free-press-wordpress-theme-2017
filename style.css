@@ -138,6 +138,9 @@ nav {
   font-weight: 400;
   text-align: left;
   width: 85%; }
+  @media screen and (min-width: 64em) {
+    .entry-title {
+      font-size: 3.125rem; } }
 
 .arts-entry-title {
   color: orange; }
@@ -163,6 +166,9 @@ img {
   text-align: left;
   padding-top: 25px;
   width: 85%; }
+  @media screen and (min-width: 64em) {
+    .entry-content {
+      width: 60%; } }
 
 .site-footer {
   background-color: #e5e5e5; }

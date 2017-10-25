@@ -24,10 +24,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @mixin breakpoint($point) {
     // assumes 16px = 1em
     // make more (or less) of these as needed
-  @if $point > 320 {
+  @if $point == 320 {
     @media screen and (min-width: 20em) { @content; }  
   }
-   @if $point > 600 {
+   @if $point == 600 {
     @media screen and (min-width: 37.5em) { @content; }  
   }  
   @if $point == 1024 {
@@ -103,8 +103,9 @@ nav{
     font-weight: 400;
     text-align: left;
     width: 85%;
-     @include breakpoint(320) { 
+     @include breakpoint(1024) { 
         font-size: 3.125rem;
+         
     }   
 }
 
@@ -125,8 +126,8 @@ img{
     color:$base;
     font-family: 'Avenir Next',sans-serif;
     text-align: left; 
-     @include breakpoint(320) { 
-        width: 60%;
+     @include breakpoint(1024) { 
+        
     }  
 }
 
@@ -138,7 +139,7 @@ img{
     text-align: left;
     padding-top: 25px;
     width:85%;
-     @include breakpoint(320) { 
+     @include breakpoint(1024) { 
         width: 60%;
     }   
     
