@@ -96,6 +96,28 @@ b, strong {
 a:focus {
   outline: none; }
 
+.site-header {
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%; }
+
+nav {
+  padding: 5em;
+  font-family: 'avenir', sans-serif;
+  font-size: 17px; }
+  nav ul {
+    text-align: justify; }
+  nav li {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000; }
+  nav ul:after {
+    content: '';
+    width: 100%;
+    display: inline-block; }
+
 .article-content {
   display: -webkit-flex;
   justify-content: center;
@@ -114,7 +136,8 @@ a:focus {
   font-size: 4.5rem;
   line-height: 4.875rem;
   font-weight: 400;
-  text-align: left; }
+  text-align: left;
+  width: 85%; }
 
 .arts-entry-title {
   color: orange; }
@@ -143,5 +166,17 @@ img {
 
 .site-footer {
   background-color: #e5e5e5; }
+
+.emailinput {
+  width: 75%;
+  display: inline-block;
+  float: right;
+  margin-bottom: 0;
+  background: #ffffff;
+  color: #000000;
+  border-bottom: solid;
+  border-radius: 0;
+  position: relative;
+  right: 55px; }
 
 /*# sourceMappingURL=style.css.map */

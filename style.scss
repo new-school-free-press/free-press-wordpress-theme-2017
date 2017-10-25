@@ -19,7 +19,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 //RESET
 @import 'reset';
 
-
 //COLOURS
 $base: #333;
 
@@ -29,6 +28,42 @@ $typekit-body: "adobe-caslon-pro";
 
 
 //ARTICLE STYLES
+
+.site-header{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:90%;
+}
+
+
+nav{
+	padding: 5em;
+	font-family: 'avenir', sans-serif;
+	font-size: 17px;
+    
+    ul{
+        text-align: justify;
+        
+    }
+
+     li{
+        display: inline-block; 
+        text-decoration: none;
+        color: #000000;
+	   
+    }
+    
+    ul:after{
+        content: '';
+        width: 100%; 
+        display: inline-block;
+    }
+
+     
+}
+
 .article-content{
     display: -webkit-flex;
     justify-content: center;
@@ -50,6 +85,7 @@ $typekit-body: "adobe-caslon-pro";
     line-height: 4.875rem;
     font-weight: 400;
     text-align: left;
+    width: 85%;
 }
 
 .arts-entry-title{
@@ -85,4 +121,17 @@ img{
 //FOOTER STYLES
 .site-footer{
     background-color: #e5e5e5;
+}
+    
+.emailinput{
+    width: 75%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 0;
+    background: #ffffff;
+    color: #000000;
+    border-bottom: solid;
+    border-radius: 0;
+    position: relative;
+    right: 55px;
 }
