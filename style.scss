@@ -19,6 +19,23 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 //RESET
 @import 'reset';
 
+//RESPONSIVE MEDIA QUERIES
+
+@mixin breakpoint($point) {
+    // assumes 16px = 1em
+    // make more (or less) of these as needed
+  @if $point > 320 {
+    @media screen and (min-width: 20em) { @content; }  
+  }
+   @if $point > 600 {
+    @media screen and (min-width: 37.5em) { @content; }  
+  }  
+  @if $point == 1024 {
+    @media screen and (min-width: 64em) { @content; } 
+  }
+  
+}  
+
 //COLOURS
 $base: #333;
 
@@ -41,7 +58,7 @@ $typekit-body: "adobe-caslon-pro";
 nav{
 	padding: 5em;
 	font-family: 'avenir', sans-serif;
-	font-size: 17px;
+	font-size: 1rem;
     
     ul{
         text-align: justify;
@@ -81,11 +98,14 @@ nav{
 .entry-title {
     color:$base;
     font: $typekit-hed;
-    font-size: 4.5rem;
+    font-size: 2.125rem;
     line-height: 4.875rem;
     font-weight: 400;
     text-align: left;
     width: 85%;
+     @include breakpoint(320) { 
+        font-size: 3.125rem;
+    }   
 }
 
 .arts-entry-title{
@@ -102,9 +122,12 @@ img{
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
-    color: #464646;
+    color:$base;
     font-family: 'Avenir Next',sans-serif;
-    text-align: left;  
+    text-align: left; 
+     @include breakpoint(320) { 
+        width: 60%;
+    }  
 }
 
 .entry-content{
@@ -114,9 +137,12 @@ img{
     font-size: 1.225rem;
     text-align: left;
     padding-top: 25px;
-    width:60%;
+    width:85%;
+     @include breakpoint(320) { 
+        width: 60%;
+    }   
+    
 }
-
 
 //FOOTER STYLES
 .site-footer{

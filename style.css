@@ -106,7 +106,7 @@ a:focus {
 nav {
   padding: 5em;
   font-family: 'avenir', sans-serif;
-  font-size: 17px; }
+  font-size: 1rem; }
   nav ul {
     text-align: justify; }
   nav li {
@@ -133,7 +133,7 @@ nav {
 .entry-title {
   color: #333;
   font: "freight-text-pro";
-  font-size: 4.5rem;
+  font-size: 2.125rem;
   line-height: 4.875rem;
   font-weight: 400;
   text-align: left;
@@ -151,7 +151,7 @@ img {
   border-top: 1px solid #e2e2e2;
   padding-top: 14px;
   padding-bottom: 14px;
-  color: #464646;
+  color: #333;
   font-family: 'Avenir Next',sans-serif;
   text-align: left; }
 
@@ -162,7 +162,7 @@ img {
   font-size: 1.225rem;
   text-align: left;
   padding-top: 25px;
-  width: 60%; }
+  width: 85%; }
 
 .site-footer {
   background-color: #e5e5e5; }
