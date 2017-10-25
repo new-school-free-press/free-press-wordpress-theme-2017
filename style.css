@@ -138,6 +138,9 @@ nav {
   font-weight: 400;
   text-align: left;
   width: 85%; }
+  @media screen and (min-width: 20em) {
+    .entry-title {
+      font-size: 3.125rem; } }
 
 .arts-entry-title {
   color: orange; }
@@ -154,6 +157,9 @@ img {
   color: #333;
   font-family: 'Avenir Next',sans-serif;
   text-align: left; }
+  @media screen and (min-width: 20em) {
+    .entry-meta {
+      width: 60%; } }
 
 .entry-content {
   font: "adobe-caslon-pro";
@@ -162,7 +168,10 @@ img {
   font-size: 1.225rem;
   text-align: left;
   padding-top: 25px;
-  width: 65%; }
+  width: 85%; }
+  @media screen and (min-width: 20em) {
+    .entry-content {
+      width: 60%; } }
 
 .site-footer {
   background-color: #e5e5e5; }

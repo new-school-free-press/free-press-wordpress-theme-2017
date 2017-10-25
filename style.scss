@@ -24,10 +24,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @mixin breakpoint($point) {
     // assumes 16px = 1em
     // make more (or less) of these as needed
-  @if $point > 320 {
+  @if $point == 320 {
     @media screen and (min-width: 20em) { @content; }  
   }
-   @if $point > 600 {
+   @if $point == 600 {
     @media screen and (min-width: 37.5em) { @content; }  
   }  
   @if $point == 1024 {
@@ -138,7 +138,7 @@ img{
     font-size: 1.225rem;
     text-align: left;
     padding-top: 25px;
-    width:65%;
+    width:85%;
      @include breakpoint(320) { 
         width: 60%;
     }   
