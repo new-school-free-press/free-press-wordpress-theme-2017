@@ -89,6 +89,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+   
 }
 
 .entry-header{
@@ -140,7 +141,7 @@ img{
     font-size: 1.225rem;
     text-align: left;
     padding-top: 25px;
-    width:85%;
+    width:65%;
      @include breakpoint(320) { 
         width: 60%;
     }   
