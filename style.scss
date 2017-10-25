@@ -19,7 +19,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 //RESET
 @import 'reset';
 
-
 //RESPONSIVE MEDIA QUERIES
 
 @mixin breakpoint($point) {
@@ -37,14 +36,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   
 }  
 
-
 //COLOURS
 $base: #333;
 
 //FONTS
 $typekit-hed: "freight-text-pro";
 $typekit-body: "adobe-caslon-pro";
-
 
 
 //ARTICLE STYLES
@@ -148,13 +145,10 @@ img{
     
 }
 
-
 //FOOTER STYLES
 .site-footer{
     background-color: #e5e5e5;
 }
-
-
     
 .emailinput{
     width: 75%;
@@ -168,6 +162,3 @@ img{
     position: relative;
     right: 55px;
 }
-
-
-    

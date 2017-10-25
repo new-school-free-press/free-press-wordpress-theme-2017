@@ -17,6 +17,13 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', get_post_type() );
             
+            if ( in_category('news') ) {
+            // news category template ?>
+            goober
+            <?php
+                
+            }
+ 
 			the_post_navigation();
 
 			// If comments are open or we have at least one comment, load up the comment template.
@@ -26,6 +33,7 @@ get_header(); ?>
 
 		endwhile; // End of the loop.
 		?>
+            
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
