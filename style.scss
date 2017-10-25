@@ -20,6 +20,24 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @import 'reset';
 
 
+//RESPONSIVE MEDIA QUERIES
+
+@mixin breakpoint($point) {
+    // assumes 16px = 1em
+    // make more (or less) of these as needed
+  @if $point > 320 {
+    @media screen and (min-width: 20em) { @content; }  
+  }
+   @if $point > 600 {
+    @media screen and (min-width: 37.5em) { @content; }  
+  }  
+  @if $point == 1024 {
+    @media screen and (min-width: 64em) { @content; } 
+  }
+  
+}  
+
+
 //COLOURS
 $base: #333;
 
@@ -27,10 +45,7 @@ $base: #333;
 $typekit-hed: "freight-text-pro";
 $typekit-body: "adobe-caslon-pro";
 
-.entry-title{
-    color: #333;
-    font: "freight-text-pro", serif;
-}
+
 
 //ARTICLE STYLES
 
@@ -46,7 +61,7 @@ $typekit-body: "adobe-caslon-pro";
 nav{
 	padding: 5em;
 	font-family: 'avenir', sans-serif;
-	font-size: 17px;
+	font-size: 1rem;
     
     ul{
         text-align: justify;
@@ -86,11 +101,14 @@ nav{
 .entry-title {
     color:$base;
     font: $typekit-hed;
-    font-size: 4.5rem;
+    font-size: 2.125rem;
     line-height: 4.875rem;
     font-weight: 400;
     text-align: left;
-    width: 90%;
+    width: 85%;
+     @include breakpoint(320) { 
+        font-size: 3.125rem;
+    }   
 }
 
 .arts-entry-title{
@@ -107,9 +125,12 @@ img{
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
-    color: #464646;
+    color:$base;
     font-family: 'Avenir Next',sans-serif;
-    text-align: left;  
+    text-align: left; 
+     @include breakpoint(320) { 
+        width: 60%;
+    }  
 }
 
 .entry-content{
@@ -119,7 +140,11 @@ img{
     font-size: 1.225rem;
     text-align: left;
     padding-top: 25px;
-    width:60%;
+    width:85%;
+     @include breakpoint(320) { 
+        width: 60%;
+    }   
+    
 }
 
 
@@ -143,29 +168,5 @@ img{
     right: 55px;
 }
 
-@mixin breakpoint($point) {
-    // assumes 16px = 1em
-    // make more (or less) of these as needed
-  @if $point == 320 {
-    @media screen and (min-width: 16em) { @content; } // 448
-  }
-  @if $point == 1200 {
-    @media screen and (min-width: 200em) { @content; } // 600
-  }
-  @if $point == 800 {
-    @media screen and (min-width: 50em) { @content; } // 800
-  }
-}  
+
     
-.thing { 
-    width: 100%; // this is the width for screens narrower than 600
-    border: 1px solid black;
-    padding: 0.5em;
-    @include breakpoint(320) { // width for screens > 600px 
-    width: 300px;
-    }
-  @include breakpoint(1200) { // width for screens > 700px 
-    width: 25%;
-    margin-left: 1em;
-  }
-}
