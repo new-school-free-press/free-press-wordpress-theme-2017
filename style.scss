@@ -104,8 +104,9 @@ nav{
     font-weight: 400;
     text-align: left;
     width: 85%;
-     @include breakpoint(320) { 
+     @include breakpoint(1024) { 
         font-size: 3.125rem;
+         
     }   
 }
 
@@ -126,8 +127,7 @@ img{
     color:$base;
     font-family: 'Avenir Next',sans-serif;
     text-align: left; 
-     @include breakpoint(320) { 
-        width: 60%;
+     @include breakpoint(1024) {   
     }  
 }
 
@@ -139,10 +139,16 @@ img{
     text-align: left;
     padding-top: 25px;
     width:85%;
+<<<<<<< HEAD
      @include breakpoint(320) { 
         width: 60%;
     }   
     
+=======
+     @include breakpoint(1024) { 
+        width:65%;    
+}
+>>>>>>> 142738709eb1bf34a7bdae30785b4a7a904feec4
 }
 
 //FOOTER STYLES
