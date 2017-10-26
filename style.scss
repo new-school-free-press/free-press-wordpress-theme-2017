@@ -81,6 +81,10 @@ nav{
      
 }
 
+p{
+    margin-bottom: 1rem;
+}
+
 .article-content{
     display: -webkit-flex;
     justify-content: center;
@@ -116,8 +120,7 @@ nav{
 
 img{
     width:85%;
-    height: auto;
-    
+    height: auto;   
 }
 .entry-meta{ 
     width: 85%;
@@ -140,7 +143,7 @@ img{
     padding-top: 25px;
     width:85%;
      @include breakpoint(1024) { 
-        width:65%;    
+        width:60%;    
 }
 }
 
