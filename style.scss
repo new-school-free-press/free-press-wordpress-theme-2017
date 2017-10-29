@@ -81,6 +81,7 @@ nav{
      
 }
 
+//DEFAULT STYLES: CAT TAG: ARTS AND CULTURE
 p{
     margin-bottom: 1rem;
 }
@@ -104,13 +105,13 @@ p{
     color:$base;
     font: $typekit-hed;
     font-size: 2.125rem;
-    line-height: 4.875rem;
+    line-height: 2rem;
     font-weight: 400;
     text-align: left;
     width: 85%;
      @include breakpoint(1024) { 
         font-size: 3.125rem;
-         
+        line-height: 4.875rem;
     }   
 }
 
@@ -146,6 +147,19 @@ img{
         width:60%;    
 }
 }
+
+//NEWS STYLES
+.category-news{
+    justify-content: left;
+    .entry-content{
+        width:85%;
+        @include breakpoint(1024) { 
+        width:50%;    
+}
+    }
+}
+
+
 
 //FOOTER STYLES
 .site-footer{

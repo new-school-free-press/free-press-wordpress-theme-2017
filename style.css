@@ -137,13 +137,14 @@ p {
   color: #333;
   font: "freight-text-pro";
   font-size: 2.125rem;
-  line-height: 4.875rem;
+  line-height: 2rem;
   font-weight: 400;
   text-align: left;
   width: 85%; }
   @media screen and (min-width: 64em) {
     .entry-title {
-      font-size: 3.125rem; } }
+      font-size: 3.125rem;
+      line-height: 4.875rem; } }
 
 .arts-entry-title {
   color: orange; }
@@ -172,6 +173,14 @@ img {
   @media screen and (min-width: 64em) {
     .entry-content {
       width: 60%; } }
+
+.category-news {
+  justify-content: left; }
+  .category-news .entry-content {
+    width: 85%; }
+    @media screen and (min-width: 64em) {
+      .category-news .entry-content {
+        width: 50%; } }
 
 .site-footer {
   background-color: #e5e5e5; }
