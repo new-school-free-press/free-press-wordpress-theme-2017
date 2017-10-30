@@ -175,26 +175,26 @@ img {
       width: 60%; } }
 
 .category-news {
-  justify-content: left; }
+  display: flex;
+  justify-content: flex-start; }
   .category-news .entry-content {
+    text-align: left;
     width: 85%; }
     @media screen and (min-width: 64em) {
       .category-news .entry-content {
         width: 50%; } }
 
 .site-footer {
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  height: 7rem; }
 
-.emailinput {
-  width: 75%;
+#footersignup {
+  padding: 3rem;
   display: inline-block;
   float: right;
   margin-bottom: 0;
-  background: #ffffff;
   color: #000000;
-  border-bottom: solid;
   border-radius: 0;
-  position: relative;
-  right: 55px; }
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

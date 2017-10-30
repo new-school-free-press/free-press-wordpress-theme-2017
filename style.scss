@@ -143,38 +143,36 @@ img{
     text-align: left;
     padding-top: 25px;
     width:85%;
-     @include breakpoint(1024) { 
-        width:60%;    
-}
+    @include breakpoint(1024) { 
+    width:60%;    
+    }
 }
 
 //NEWS STYLES
 .category-news{
-    justify-content: left;
+    display: flex;
+    justify-content: flex-start;
     .entry-content{
+        text-align: left;
         width:85%;
         @include breakpoint(1024) { 
         width:50%;    
+        }
+        }    
 }
-    }
-}
-
-
 
 //FOOTER STYLES
 .site-footer{
     background-color: #e5e5e5;
+    height: 7rem;
 }
     
-.emailinput{
-    width: 75%;
+#footersignup{
+    padding: 3rem;
     display: inline-block;
     float: right;
     margin-bottom: 0;
-    background: #ffffff;
     color: #000000;
-    border-bottom: solid;
     border-radius: 0;
     position: relative;
-    right: 55px;
 }
