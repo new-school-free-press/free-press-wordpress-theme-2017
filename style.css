@@ -174,14 +174,14 @@ img {
     .entry-content {
       width: 60%; } }
 
-.category-news {
+article.category-news {
   display: flex;
   justify-content: flex-start; }
-  .category-news .entry-content {
+  article.category-news .entry-content {
     text-align: left;
     width: 85%; }
     @media screen and (min-width: 64em) {
-      .category-news .entry-content {
+      article.category-news .entry-content {
         width: 50%; } }
 
 .site-footer {
