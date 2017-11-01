@@ -49,7 +49,7 @@
 					<li> Arts and Culture  </li>
 					<li> News </li>
 					<li> Campus </li>
-                    <img src="images/nsfplogo.png"  style="">
+                    <img src="<?php echo( get_header_image() ); ?>" class="logo-header" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 					<li> Video  </li>
 					<li> Opinions  </li>
                     <li> Submit  </li>
