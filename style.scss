@@ -38,6 +38,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 //COLOURS
 $base: #333;
+$meta-dark:#464646;
 
 //FONTS
 $typekit-hed: "freight-text-pro";
@@ -51,11 +52,11 @@ $typekit-body: "adobe-caslon-pro";
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width:80%;
+    width:85%;
 }
 
 .logo-header{
-        width: 95%;
+        width: 100%;
      @include breakpoint(1024) { 
          width: 25%;
     }  
@@ -123,10 +124,6 @@ p{
     }   
 }
 
-.arts-entry-title{
-    color:orange;
-}
-
 img{
     width:85%;
     height: auto;   
@@ -136,10 +133,10 @@ img{
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
-    color:$base;
+    color:$meta-dark;
     font-family: 'Avenir Next',sans-serif;
     text-align: left; 
-     @include breakpoint(1024) {   
+        @include breakpoint(1024) {   
     }  
 }
 
@@ -156,6 +153,19 @@ img{
     width:60%;    
     }
 }
+a.author.url.fn{
+    padding-top: 10px;
+    text-decoration: none;
+    font-style: italic;
+    color: $meta-dark;
+}
+a.author.url.fn:hover{
+cursor: pointer;
+}
+
+h2.article-date{
+  padding-bottom: 10px;  
+}
 
 //NEWS STYLES
 article.category-news{
@@ -164,9 +174,9 @@ article.category-news{
     .entry-content{
         text-align: left;
         width:85%;
-        @include breakpoint(1024) { 
-        width:50%;   
-        }
+            @include breakpoint(1024) { 
+            width:60%;   
+            }
         }    
     .news-sidebar{
         width: 40%;
@@ -178,8 +188,8 @@ article.category-news{
 .site-footer{
     background-color: #e5e5e5;
     height: 7rem;
-}
-    
+} 
+
 #footersignup{
     padding: 3rem;
     display: inline-block;

@@ -24,13 +24,15 @@
         
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-            
+            <h2 class="article-date">
+        <?php the_date('m.d.Y', '<h2>', '</h2>'); ?>
+            </h2>
                 <?php if ( function_exists( 'coauthors_posts_links' ) ) {
             coauthors_posts_links();
         } else {
             the_author_posts_link();
         } ?>
-
+        
 		</div><!-- .entry-meta -->
 
 		<?php

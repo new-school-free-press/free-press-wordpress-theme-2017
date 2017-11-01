@@ -19,7 +19,7 @@ get_header(); ?>
             
             if ( in_category('news') ) {
             // news category template ?>
-<div class="news-sidebar">something</div>
+
             <?php
                 
             }

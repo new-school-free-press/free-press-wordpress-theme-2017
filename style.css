@@ -101,10 +101,10 @@ a:focus {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 80%; }
+  width: 85%; }
 
 .logo-header {
-  width: 95%; }
+  width: 100%; }
   @media screen and (min-width: 64em) {
     .logo-header {
       width: 25%; } }
@@ -153,9 +153,6 @@ p {
       font-size: 3.125rem;
       line-height: 4.875rem; } }
 
-.arts-entry-title {
-  color: orange; }
-
 img {
   width: 85%;
   height: auto; }
@@ -165,7 +162,7 @@ img {
   border-top: 1px solid #e2e2e2;
   padding-top: 14px;
   padding-bottom: 14px;
-  color: #333;
+  color: #464646;
   font-family: 'Avenir Next',sans-serif;
   text-align: left; }
 
@@ -182,6 +179,18 @@ img {
     .entry-content {
       width: 60%; } }
 
+a.author.url.fn {
+  padding-top: 10px;
+  text-decoration: none;
+  font-style: italic;
+  color: #464646; }
+
+a.author.url.fn:hover {
+  cursor: pointer; }
+
+h2.article-date {
+  padding-bottom: 10px; }
+
 article.category-news {
   display: flex;
   justify-content: center; }
@@ -190,7 +199,7 @@ article.category-news {
     width: 85%; }
     @media screen and (min-width: 64em) {
       article.category-news .entry-content {
-        width: 50%; } }
+        width: 60%; } }
   article.category-news .news-sidebar {
     width: 40%;
     background-color: orange; }
