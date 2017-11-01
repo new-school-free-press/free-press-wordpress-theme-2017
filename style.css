@@ -125,9 +125,6 @@ nav {
     width: 100%;
     display: inline-block; }
 
-p {
-  margin-bottom: 1rem; }
-
 .article-content {
   display: -webkit-flex;
   justify-content: center;
@@ -139,10 +136,13 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
+  .entry-header img {
+    width: 85%;
+    height: auto; }
 
 .entry-title {
   color: #333;
-  font: "freight-text-pro";
+  font-family: "freight-text-pro";
   font-size: 2.125rem;
   line-height: 2rem;
   font-weight: 400;
@@ -152,10 +152,6 @@ p {
     .entry-title {
       font-size: 3.125rem;
       line-height: 4.875rem; } }
-
-img {
-  width: 85%;
-  height: auto; }
 
 .entry-meta {
   width: 85%;
@@ -168,16 +164,21 @@ img {
 
 .entry-content {
   color: #333;
-  font: "adobe-caslon-pro";
+  font-family: "adobe-caslon-pro";
   margin-bottom: 17px;
   line-height: 1.63;
   font-size: 1.225rem;
   text-align: left;
   padding-top: 25px;
   width: 85%; }
+  .entry-content p {
+    margin-bottom: 1rem; }
   @media screen and (min-width: 64em) {
     .entry-content {
       width: 60%; } }
+
+.entry-meta-byline {
+  display: block; }
 
 a.author.url.fn {
   padding-top: 10px;
@@ -188,21 +189,33 @@ a.author.url.fn {
 a.author.url.fn:hover {
   cursor: pointer; }
 
-h2.article-date {
+.post-categories {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 5px;
+  border-right: 1px solid;
+  text-decoration: none;
+  font-style: italic;
+  color: #464646; }
+
+.entry-meta-date {
+  display: inline-block;
   padding-bottom: 10px; }
 
-article.category-news {
+.news-story-wrapper {
   display: flex;
   justify-content: center; }
-  article.category-news .entry-content {
-    text-align: left;
-    width: 85%; }
-    @media screen and (min-width: 64em) {
-      article.category-news .entry-content {
-        width: 60%; } }
-  article.category-news .news-sidebar {
-    width: 40%;
-    background-color: orange; }
+
+article.category-news .entry-content {
+  text-align: left;
+  width: 85%; }
+  @media screen and (min-width: 64em) {
+    article.category-news .entry-content {
+      width: 50%; } }
+
+.news-sidebar {
+  width: 35%;
+  background-color: orange; }
 
 .site-footer {
   background-color: #e5e5e5;

@@ -91,9 +91,7 @@ nav{
 }
 
 //DEFAULT STYLES: CAT TAG: ARTS AND CULTURE
-p{
-    margin-bottom: 1rem;
-}
+
 
 .article-content{
     display: -webkit-flex;
@@ -108,11 +106,15 @@ p{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+        img{
+        width:85%;
+        height: auto;   
+}
 }
 
 .entry-title {
     color:$base;
-    font: $typekit-hed;
+    font-family: $typekit-hed;
     font-size: 2.125rem;
     line-height: 2rem;
     font-weight: 400;
@@ -124,10 +126,6 @@ p{
     }   
 }
 
-img{
-    width:85%;
-    height: auto;   
-}
 .entry-meta{ 
     width: 85%;
     border-top: 1px solid #e2e2e2;
@@ -142,16 +140,23 @@ img{
 
 .entry-content{
     color: $base;
-    font:$typekit-body;
+    font-family:$typekit-body;
     margin-bottom: 17px;
     line-height: 1.63;
     font-size: 1.225rem;
     text-align: left;
     padding-top: 25px;
     width:85%;
-    @include breakpoint(1024) { 
-    width:60%;    
+    p{
+        margin-bottom: 1rem;
     }
+    @include breakpoint(1024) { 
+        width:60%;    
+    }
+}
+
+.entry-meta-byline{
+    display: block;  
 }
 a.author.url.fn{
     padding-top: 10px;
@@ -163,25 +168,38 @@ a.author.url.fn:hover{
 cursor: pointer;
 }
 
-h2.article-date{
-  padding-bottom: 10px;  
+.post-categories{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 5px;
+    border-right: 1px solid;
+    text-decoration: none;
+    font-style: italic;
+    color: $meta-dark;
+}
+
+.entry-meta-date{
+    display: inline-block;
+    padding-bottom: 10px;  
 }
 
 //NEWS STYLES
-article.category-news{
+.news-story-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+}
+article.category-news{
     .entry-content{
         text-align: left;
         width:85%;
             @include breakpoint(1024) { 
-            width:60%;   
+            width:50%;   
             }
         }    
-    .news-sidebar{
-        width: 40%;
+}
+.news-sidebar{
+        width: 35%;
         background-color: orange;
-    }
 }
 
 //FOOTER STYLES

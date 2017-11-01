@@ -55,7 +55,7 @@
                     <li> Submit  </li>
 				</ul>
 			
-    </nav>
+        </nav>
 		
 	</header><!-- #masthead -->
 
