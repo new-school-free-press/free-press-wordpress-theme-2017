@@ -56,16 +56,19 @@ $typekit-body: "adobe-caslon-pro";
 }
 
 #logohead{
-    width:45%;
-    height:auto;
-    position: relative;
-    right: -4rem;
-    top: 3rem;
+        width:45%;
+        height:auto;
+        position: relative;
+        right: -4rem;
+        top: 3rem;
+    @include breakpoint(1024) { 
+    width: 25%;
 }
 
 
 .logo-header{
         width: 100%;
+        display: block;
      @include breakpoint(1024) { 
          width: 25%;
     }  
