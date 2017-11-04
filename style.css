@@ -124,6 +124,7 @@ nav#entry-nav {
   border-bottom: 1px solid;
   top: 0;
   display: flex;
+  color: pink;
   justify-content: center; }
   @media screen and (min-width: 64em) {
     nav#entry-nav {

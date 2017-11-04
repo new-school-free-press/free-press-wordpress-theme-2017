@@ -80,6 +80,7 @@ nav#entry-nav{
         border-bottom: 1px solid;
         top: 0;
         display: flex;
+        color: pink;
         justify-content: center;
     @include breakpoint(1024) { 
     width: 100%;
