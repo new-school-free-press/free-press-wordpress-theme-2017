@@ -103,13 +103,6 @@ a:focus {
   flex-wrap: wrap;
   width: 85%; }
 
-#logohead {
-  width: 45%;
-  height: auto;
-  position: relative;
-  right: -4rem;
-  top: 3rem; }
-
 .logo-header {
   width: 100%; }
   @media screen and (min-width: 64em) {
@@ -130,7 +123,18 @@ nav#entry-nav {
     nav#entry-nav {
       width: 100%; } }
   nav#entry-nav .nav-anchor {
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-right: 1em;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase; }
+  nav#entry-nav #logohead {
+    width: 100%;
+    height: auto;
+    justify-content: space-around; }
+    @media screen and (min-width: 64em) {
+      nav#entry-nav #logohead {
+        width: 45%; } }
 
 .article-content {
   display: -webkit-flex;

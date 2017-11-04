@@ -55,14 +55,6 @@ $typekit-body: "adobe-caslon-pro";
     width:85%;
 }
 
-#logohead{
-    width:45%;
-    height:auto;
-    position: relative;
-    right: -4rem;
-    top: 3rem;
-}
-
 
 .logo-header{
         width: 100%;
@@ -82,13 +74,30 @@ nav#entry-nav{
         display: flex;
         color: pink;
         justify-content: center;
+        
     @include breakpoint(1024) { 
     width: 100%;
     }  
     
     .nav-anchor{
         justify-content: space-between;
+        padding-right: 1em;
+        color:$base;
+        text-decoration: none;
+        text-transform: uppercase;
     }
+    
+    #logohead{
+    width: 100%;
+    height:auto;
+    justify-content: space-around;
+        
+        @include breakpoint(1024) { 
+        width: 45%;
+    }  
+        
+    }
+
 }
 
 //DEFAULT STYLES: CAT TAG: ARTS AND CULTURE
