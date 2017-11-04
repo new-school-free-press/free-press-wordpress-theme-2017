@@ -1,174 +1,55 @@
-/*!
-Theme Name: New School Free Press
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: new-school-free-press
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+/*
+Error: Invalid CSS after "<<<<<<< HEAD": expected "{", was "}"
+        on line 237 of style.scss
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# POST STYLES
---------------------------------------------------------------*/
-a, html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  background: transparent;
-  position: relative;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+232: //FOOTER STYLES
+233:     
+234: .site-footer{
+235:     background-color: #e5e5e5;
+236: <<<<<<< HEAD
+237: }
+238:     
+239: .emailinput {
+240:     width: 75%;
+241: =======
+242:     height: 7rem;
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-  position: relative; }
-
-html {
-  font-size: 100%;
-  line-height: 1; }
-
-body {
-  line-height: 1; }
-
-ul {
-  list-style: none; }
-
-ol {
-  list-style: decimal; }
-
-blockquote, q {
-  quotes: none; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-del {
-  text-decoration: line-through; }
-
-abbr[title], dfn[title], acronym[title] {
-  border-bottom: 1px dotted;
-  cursor: help; }
-
-input, select {
-  vertical-align: middle; }
-
-input {
-  -webkit-appearance: none;
-  box-sizing: border-box; }
-
-i, em {
-  font-style: italic; }
-  i i, i em, em i, em em {
-    font-style: normal; }
-
-b, strong {
-  font-weight: bold; }
-
-a:focus {
-  outline: none; }
-
-.site-header {
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90%; }
-
-#logohead {
-  width: 45%;
-  height: auto;
-  position: relative;
-  right: -4rem;
-  top: 3rem; }
-
-nav {
-  padding: 5em;
-  font-family: 'avenir', sans-serif;
-  font-size: 1rem; }
-  nav ul {
-    text-align: justify; }
-  nav li {
-    display: inline-block;
-    text-decoration: none;
-    color: #000000; }
-  nav ul:after {
-    content: '';
-    width: 100%;
-    display: inline-block; }
-
-.arts-entry-title {
-  color: orange; }
-
-img {
-  width: 85%;
-  height: auto; }
-
-.entry-meta {
-  width: 85%;
-  border-top: 1px solid #e2e2e2;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  color: #333;
-  font-family: 'Avenir Next',sans-serif;
-  text-align: left; }
-
-.entry-content {
-  font: "adobe-caslon-pro";
-  margin-bottom: 17px;
-  line-height: 1.63;
-  font-size: 1.225rem;
-  text-align: left;
-  padding-top: 25px;
-  width: 85%; }
-  @media screen and (min-width: 20em) {
-    .entry-content {
-      width: 60%; } }
-  @media screen and (min-width: 64em) {
-    .entry-content {
-      width: 65%; } }
-
-.site-footer {
-  background-color: #e5e5e5; }
-
-.emailinput {
-  width: 75%;
-  display: inline-block;
-  float: right;
-  margin-bottom: 0;
-  background: #ffffff;
-  color: #000000;
-  border-bottom: solid;
-  border-radius: 0;
-  position: relative;
-  right: 55px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:237
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:677:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<<<<<<< HEAD\": expected \"{\", was \"}\"\A         on line 237 of style.scss\A \A 232: //FOOTER STYLES\A 233:     \A 234: .site-footer{\A 235:     background-color: #e5e5e5;\A 236: <<<<<<< HEAD\A 237: }\A 238:     \A 239: .emailinput {\A 240:     width: 75%;\A 241: =======\A 242:     height: 7rem;"; }

@@ -38,20 +38,21 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 //COLOURS
 $base: #333;
+$meta-dark:#464646;
 
 //FONTS
 $typekit-hed: "freight-text-pro";
 $typekit-body: "adobe-caslon-pro";
 
 
-//ARTICLE STYLES
+//SITE HEADER STYLES
 
 .site-header{
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width:90%;
+    width:85%;
 }
 
 #logohead{
@@ -63,10 +64,19 @@ $typekit-body: "adobe-caslon-pro";
 }
 
 
+.logo-header{
+        width: 100%;
+     @include breakpoint(1024) { 
+         width: 25%;
+    }  
+}
+
+
 nav{
 	padding: 5em;
-	font-family: 'avenir', sans-serif;
+	font-family: 'Avenir Next', sans-serif;
 	font-size: 1rem;
+
     
     ul{
         text-align: justify;
@@ -75,6 +85,7 @@ nav{
 
      li{
         display: inline-block; 
+        text-transform: uppercase;
         text-decoration: none;
         color: #000000;
 	   
@@ -91,35 +102,66 @@ nav{
 
 
 
-.arts-entry-title{
-    color:orange;
+
+//DEFAULT STYLES: CAT TAG: ARTS AND CULTURE
+
+
+.article-content{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
 }
 
-img{
-    width:85%;
-    height: auto;
-    
+.entry-header{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+        img{
+        width:85%;
+        height: auto;   
 }
+}
+
+.entry-title {
+    color:$base;
+    font-family: $typekit-hed;
+    font-size: 2.125rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: left;
+    width: 85%;
+     @include breakpoint(1024) { 
+        font-size: 3.125rem;
+        line-height: 4.875rem;
+    }   
+}
+
+
 .entry-meta{ 
     width: 85%;
     border-top: 1px solid #e2e2e2;
     padding-top: 14px;
     padding-bottom: 14px;
-    color:$base;
+    color:$meta-dark;
     font-family: 'Avenir Next',sans-serif;
     text-align: left; 
-     @include breakpoint(1024) {   
+        @include breakpoint(1024) {   
     }  
 }
 
 .entry-content{
-    font:$typekit-body;
+    color: $base;
+    font-family:$typekit-body;
     margin-bottom: 17px;
     line-height: 1.63;
     font-size: 1.225rem;
     text-align: left;
     padding-top: 25px;
     width:85%;
+
 
      @include breakpoint(320) { 
         width: 60%;
@@ -129,6 +171,61 @@ img{
      @include breakpoint(1024) { 
         width:65%; 
     }
+
+    p{
+        margin-bottom: 1rem;
+    }
+    @include breakpoint(1024) { 
+        width:60%;    
+    }
+}
+
+.entry-meta-byline{
+    display: block;  
+}
+a.author.url.fn{
+    padding-top: 10px;
+    text-decoration: none;
+    font-style: italic;
+    color: $meta-dark;
+}
+a.author.url.fn:hover{
+cursor: pointer;
+}
+
+.post-categories{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 5px;
+    border-right: 1px solid;
+    text-decoration: none;
+    font-style: italic;
+    color: $meta-dark;
+}
+
+.entry-meta-date{
+    display: inline-block;
+    padding-bottom: 10px;  
+}
+
+//NEWS STYLES
+.news-story-wrapper{
+    display: flex;
+    justify-content: center; 
+}
+article.category-news{
+    .entry-content{
+        text-align: left;
+        width:85%;
+            @include breakpoint(1024) { 
+            width:50%;   
+            }
+        }    
+}
+.news-sidebar{
+        width: 35%;
+        background-color: orange;
+
 }
 
 
@@ -136,18 +233,25 @@ img{
     
 .site-footer{
     background-color: #e5e5e5;
+<<<<<<< HEAD
 }
     
 .emailinput {
     width: 75%;
+=======
+    height: 7rem;
+} 
+
+#footersignup{
+    padding: 3rem;
     display: inline-block;
     float: right;
     margin-bottom: 0;
-    background: #ffffff;
     color: #000000;
-    border-bottom: solid;
     border-radius: 0;
     position: relative;
     right: 55px;
     
     }
+
+}

@@ -24,14 +24,20 @@
         
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-            
-                <?php if ( function_exists( 'coauthors_posts_links' ) ) {
+        <div class="post-categories">
+        <?php the_category( ' ' ); ?>
+        </div>    
+        <div class="entry-meta-date">
+            <?php the_date('m.d.Y'); ?>
+        </div>
+        <div class="entry-meta-byline">
+        <?php if ( function_exists( 'coauthors_posts_links' ) ) {
             coauthors_posts_links();
         } else {
             the_author_posts_link();
         } ?>
-
-		</div><!-- .entry-meta -->
+        </div>    
+</div><!-- .entry-meta -->
 
 		<?php
 		endif; ?>
@@ -44,7 +50,17 @@
            
 	</header><!-- .entry-header -->
     
+    <?php
+            if ( in_category('news') ) {
+            // news category template ?> 
+            <div class="news-story-wrapper">
+    <?php
+            }
+    ?>
+          
 	<div class="entry-content">
+        
+
 		<?php
 			the_content( sprintf(
 				wp_kses(
@@ -65,8 +81,16 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-    </div>
-	<footer class="entry-footer">
-		<?php new_school_free_press_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+                
+            <?php if ( in_category('news') ) {
+            // news category template ?>
+            <div class="news-sidebar">sidebar</div>
+            </div><!-- / .news-story-wrapper -->
+        <?php
+                
+            }            
+        ?>              
+                
+    </div><!--/ news-storry-wrapper-->
+    </div> <!--/ article-content-->
 </article><!-- #post-<?php the_ID(); ?> -->
