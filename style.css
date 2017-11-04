@@ -117,7 +117,6 @@ a:focus {
       width: 25%; } }
 
 nav#entry-nav {
-  padding: 5em;
   font-family: 'Avenir Next', sans-serif;
   font-size: 1rem;
   width: 100%;
@@ -126,6 +125,9 @@ nav#entry-nav {
   top: 0;
   display: flex;
   justify-content: center; }
+  @media screen and (min-width: 64em) {
+    nav#entry-nav {
+      width: 100%; } }
   nav#entry-nav .nav-anchor {
     justify-content: space-between; }
 
