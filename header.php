@@ -49,7 +49,7 @@
                                 <li> Arts and Culture  </li>
                                 <li> News </li>
                                 <li> Campus </li>
-                                <img id="logohead" src="/images/nsfplogo.jpg"  style="">
+                                <img id="logohead" src="../images/nsfplogo.jpg"  style="">
                                 <li> Video  </li>
                                 <li> Opinions  </li>
                                 <li> Submit  </li>
