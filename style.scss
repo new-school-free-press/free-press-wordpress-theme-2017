@@ -54,6 +54,14 @@ $typekit-body: "adobe-caslon-pro";
     width:90%;
 }
 
+#logohead{
+    width:45%;
+    height:auto;
+    position: relative;
+    right: -4rem;
+    top: 3rem;
+}
+
 
 nav{
 	padding: 5em;
@@ -81,34 +89,7 @@ nav{
      
 }
 
-.article-content{
-    display: -webkit-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-   
-}
 
-.entry-header{
-    display: -webkit-flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.entry-title {
-    color:$base;
-    font: $typekit-hed;
-    font-size: 2.125rem;
-    line-height: 4.875rem;
-    font-weight: 400;
-    text-align: left;
-    width: 85%;
-     @include breakpoint(1024) { 
-        font-size: 3.125rem;
-         
-    }   
-}
 
 .arts-entry-title{
     color:orange;
@@ -139,24 +120,25 @@ img{
     text-align: left;
     padding-top: 25px;
     width:85%;
-<<<<<<< HEAD
+
      @include breakpoint(320) { 
         width: 60%;
     }   
     
-=======
+
      @include breakpoint(1024) { 
-        width:65%;    
-}
->>>>>>> 142738709eb1bf34a7bdae30785b4a7a904feec4
+        width:65%; 
+    }
 }
 
+
 //FOOTER STYLES
+    
 .site-footer{
     background-color: #e5e5e5;
 }
     
-.emailinput{
+.emailinput {
     width: 75%;
     display: inline-block;
     float: right;
@@ -167,4 +149,5 @@ img{
     border-radius: 0;
     position: relative;
     right: 55px;
-}
+    
+    }
