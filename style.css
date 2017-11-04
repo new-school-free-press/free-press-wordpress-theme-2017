@@ -1,46 +1,250 @@
-/*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 242 of style.scss
+/*!
+Theme Name: New School Free Press
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: new-school-free-press
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-237:     margin-bottom: 0;
-238:     color: #000000;
-239:     border-radius: 0;
-240:     position: relative;
-241:     right: 55px;
-242: }
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# POST STYLES
+--------------------------------------------------------------*/
+a, html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
-Backtrace:
-style.scss:242
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:679:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 242 of style.scss\A \A 237:     margin-bottom: 0;\A 238:     color: #000000;\A 239:     border-radius: 0;\A 240:     position: relative;\A 241:     right: 55px;\A 242: }"; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  position: relative; }
+
+html {
+  font-size: 100%;
+  line-height: 1; }
+
+body {
+  line-height: 1; }
+
+ul {
+  list-style: none; }
+
+ol {
+  list-style: decimal; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title], acronym[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+input, select {
+  vertical-align: middle; }
+
+input {
+  -webkit-appearance: none;
+  box-sizing: border-box; }
+
+i, em {
+  font-style: italic; }
+  i i, i em, em i, em em {
+    font-style: normal; }
+
+b, strong {
+  font-weight: bold; }
+
+a:focus {
+  outline: none; }
+
+.site-header {
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%; }
+
+#logohead {
+  width: 45%;
+  height: auto;
+  position: relative;
+  right: -4rem;
+  top: 3rem; }
+
+.logo-header {
+  width: 100%; }
+  @media screen and (min-width: 64em) {
+    .logo-header {
+      width: 25%; } }
+
+nav#entry-nav {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  height: 5em;
+  border-bottom: 1px solid;
+  top: 0;
+  display: flex;
+  color: pink;
+  justify-content: center; }
+  @media screen and (min-width: 64em) {
+    nav#entry-nav {
+      width: 100%; } }
+  nav#entry-nav .nav-anchor {
+    justify-content: space-between; }
+
+.article-content {
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.entry-header {
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .entry-header img {
+    width: 85%;
+    height: auto; }
+
+.entry-title {
+  color: #333;
+  font-family: "freight-text-pro";
+  font-size: 2.125rem;
+  line-height: 2rem;
+  font-weight: 400;
+  text-align: left;
+  width: 85%; }
+  @media screen and (min-width: 64em) {
+    .entry-title {
+      font-size: 3.125rem;
+      line-height: 4.875rem; } }
+
+.entry-meta {
+  width: 85%;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #464646;
+  font-family: 'Avenir Next',sans-serif;
+  text-align: left; }
+
+.entry-content {
+  color: #333;
+  font-family: "adobe-caslon-pro";
+  margin-bottom: 17px;
+  line-height: 1.63;
+  font-size: 1.225rem;
+  text-align: left;
+  padding-top: 25px;
+  width: 80%; }
+  @media screen and (min-width: 64em) {
+    .entry-content {
+      width: 60%; } }
+  @media screen and (min-width: 64em) {
+    .entry-content {
+      width: 65%; } }
+  .entry-content p {
+    margin-bottom: 1rem; }
+  @media screen and (min-width: 64em) {
+    .entry-content {
+      width: 60%; } }
+
+.entry-meta-byline {
+  display: block; }
+
+a.author.url.fn {
+  padding-top: 10px;
+  text-decoration: none;
+  font-style: italic;
+  color: #464646; }
+
+a.author.url.fn:hover {
+  cursor: pointer; }
+
+.post-categories {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 5px;
+  border-right: 1px solid;
+  text-decoration: none;
+  font-style: italic;
+  color: #464646; }
+
+.entry-meta-date {
+  display: inline-block;
+  padding-bottom: 10px; }
+
+.news-story-wrapper {
+  display: flex;
+  justify-content: center; }
+
+article.category-news .entry-content {
+  text-align: left;
+  width: 85%; }
+  @media screen and (min-width: 64em) {
+    article.category-news .entry-content {
+      width: 50%; } }
+
+.news-sidebar {
+  width: 35%;
+  background-color: orange; }
+
+.site-footer {
+  background-color: #e5e5e5; }
+
+.emailinput {
+  width: 75%;
+  height: 7rem; }
+
+#footersignup {
+  padding: 3rem;
+  display: inline-block;
+  float: right;
+  margin-bottom: 0;
+  color: #000000;
+  border-radius: 0;
+  position: relative;
+  right: 55px; }
+
+/*# sourceMappingURL=style.css.map */
