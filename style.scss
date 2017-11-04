@@ -72,33 +72,22 @@ $typekit-body: "adobe-caslon-pro";
 }
 
 
-nav{
+nav#entry-nav{
 	padding: 5em;
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 1rem;
-
+    width:100%;
+    height: 5em;
+    border-bottom: 1px solid;
+    top: 0;
+    display: flex;
+    justify-content: center;
     
-    ul{
-        text-align: justify;
-        
+    .nav-anchor{
+        justify-content: space-between;
     }
-
-     li{
-        display: inline-block; 
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #000000;
-	   
-    }
-    
-    ul:after{
-        content: '';
-        width: 100%; 
-        display: inline-block;
-    }
-
-     
 }
+
 
 
 
@@ -160,10 +149,10 @@ nav{
     font-size: 1.225rem;
     text-align: left;
     padding-top: 25px;
-    width:85%;
+    width:80%;
 
 
-     @include breakpoint(320) { 
+     @include breakpoint(1024) { 
         width: 60%;
     }   
     

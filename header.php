@@ -44,17 +44,14 @@
                     endif; ?>
             <!-- .site-branding -->
 
-                        <nav>
-				            <ul>
-                                <li> Arts and Culture  </li>
-                                <li> News </li>
-                                <li> Campus </li>
-                                <img id="logohead" src="/images/nsfplogofinal.svg"  style="">
-                                <li> Video  </li>
-                                <li> Opinions  </li>
-                                <li> Submit  </li>
-				            </ul>
-			
+                        <nav id="entry-nav">
+				            <a href="" class="nav-anchor">Arts and Culture</a>
+                            <a href="" class="nav-anchor">News</a>
+                            <a href="" class="nav-anchor">Campus</a>
+                            <img id="logohead" src="/images/nsfplogofinal.svg" style="">
+                            <a href="" class="nav-anchor">Video</a>
+                            <a href="" class="nav-anchor">Opinion</a>
+                            <a href="" class="nav-anchor">Submit</a>
                         </nav>
 
 	</header><!-- #masthead -->
