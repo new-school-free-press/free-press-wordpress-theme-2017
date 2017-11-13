@@ -96,6 +96,22 @@ b, strong {
 a:focus {
   outline: none; }
 
+body.home .entry-header {
+  width: 50%; }
+body.home .entry-title {
+  color: #333;
+  font-family: "freight-text-pro";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400; }
+body.home a {
+  color: #333;
+  text-decoration: none; }
+body.home .entry-meta-dek {
+  color: #9C9C9C;
+  font-family: "adobe-caslon-pro";
+  padding-top: .5em; }
+
 .site-header {
   display: -webkit-flex;
   justify-content: center;
@@ -169,7 +185,7 @@ nav#entry-nav {
   border-top: 1px solid #e2e2e2;
   padding-top: 14px;
   padding-bottom: 14px;
-  color: #464646;
+  color: #9C9C9C;
   font-family: 'Avenir Next',sans-serif;
   text-align: left; }
 
@@ -201,7 +217,7 @@ a.author.url.fn {
   padding-top: 10px;
   text-decoration: none;
   font-style: italic;
-  color: #464646; }
+  color: #9C9C9C; }
 
 a.author.url.fn:hover {
   cursor: pointer; }
@@ -213,7 +229,7 @@ a.author.url.fn:hover {
   border-right: 1px solid;
   text-decoration: none;
   font-style: italic;
-  color: #464646; }
+  color: #9C9C9C; }
 
 .entry-meta-date {
   display: inline-block;

@@ -38,12 +38,34 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 //COLOURS
 $base: #333;
-$meta-dark:#464646;
+$meta-dark:#9C9C9C;
 
 //FONTS
 $typekit-hed: "freight-text-pro";
 $typekit-body: "adobe-caslon-pro";
 
+//
+body.home{
+    .entry-header{
+       width: 50%; 
+    }
+    .entry-title{
+        color:$base;
+        font-family: $typekit-hed;
+        font-size:1.5rem;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+    a{
+        color:$base;
+        text-decoration: none;
+    }
+    .entry-meta-dek{
+        color: $meta-dark;
+        font-family:$typekit-body;
+        padding-top: .5em;
+    }
+}
 
 //SITE HEADER STYLES
 
