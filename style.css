@@ -103,11 +103,16 @@ a:focus {
   flex-wrap: wrap;
   width: 85%; }
 
-.logo-header {
-  width: 100%; }
+.meta-header {
+  display: flex; }
+
+#header-logo {
+  width: 100%;
+  height: auto;
+  justify-content: center; }
   @media screen and (min-width: 64em) {
-    .logo-header {
-      width: 25%; } }
+    #header-logo {
+      width: 45%; } }
 
 nav#entry-nav {
   font-family: 'Avenir Next', sans-serif;
@@ -116,25 +121,27 @@ nav#entry-nav {
   height: 5em;
   border-bottom: 1px solid;
   top: 0;
-  display: flex;
   color: pink;
-  justify-content: center; }
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+  nav#entry-nav a[class^="nav-anchor-"] {
+    justify-content: space-between;
+    color: #333;
+    outline: 1px solid red;
+    text-decoration: none;
+    text-transform: uppercase; }
+    nav#entry-nav a[class^="nav-anchor-"].nav-anchor-video {
+      outline: blue 1px solid; }
+    nav#entry-nav a[class^="nav-anchor-"].nav-anchor-opinion {
+      outline: blue 1px solid;
+      display: none; }
+    nav#entry-nav a[class^="nav-anchor-"].nav-anchor-submit {
+      outline: blue 1px solid;
+      display: none; }
   @media screen and (min-width: 64em) {
     nav#entry-nav {
       width: 100%; } }
-  nav#entry-nav .nav-anchor {
-    justify-content: space-between;
-    padding-right: 1em;
-    color: #333;
-    text-decoration: none;
-    text-transform: uppercase; }
-  nav#entry-nav #logohead {
-    width: 100%;
-    height: auto;
-    justify-content: space-around; }
-    @media screen and (min-width: 64em) {
-      nav#entry-nav #logohead {
-        width: 45%; } }
 
 .article-content {
   display: -webkit-flex;
@@ -236,6 +243,33 @@ article.category-news .entry-content {
 
 .site-footer {
   background-color: #e5e5e5; }
+
+.meta-footer {
+  display: flex;
+  justify-content: center; }
+  .meta-footer #footer-logo {
+    width: 85%;
+    height: auto; }
+    @media screen and (min-width: 64em) {
+      .meta-footer #footer-logo {
+        width: 45%; } }
+
+nav#entry-footer {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  height: 15rem;
+  border-bottom: 1px solid;
+  top: 0;
+  color: pink;
+  justify-content: center;
+  display: inline-grid;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+  @media screen and (min-width: 64em) {
+    nav#entry-footer {
+      width: 100%; } }
 
 .emailinput {
   width: 75%;

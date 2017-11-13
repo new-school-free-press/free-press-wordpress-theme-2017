@@ -55,49 +55,51 @@ $typekit-body: "adobe-caslon-pro";
     width:85%;
 }
 
+.meta-header{
+    display: flex;
+}
 
-.logo-header{
-        width: 100%;
-     @include breakpoint(1024) { 
-         width: 25%;
+ #header-logo{
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    @include breakpoint(1024) { 
+        width: 45%;
     }  
 }
 
-
 nav#entry-nav{
-        font-family: 'Avenir Next', sans-serif;
-        font-size: 1rem;
-        width:100%;
-        height: 5em;
-        border-bottom: 1px solid;
-        top: 0;
-        display: flex;
-        color: pink;
-        justify-content: center;
-        
-    @include breakpoint(1024) { 
-    width: 100%;
-    }  
-    
-    .nav-anchor{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 1rem;
+    width:100%;
+    height: 5em;
+    border-bottom: 1px solid;
+    top: 0;
+    color: pink;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    a[class^="nav-anchor-"] {
         justify-content: space-between;
-        padding-right: 1em;
         color:$base;
+        outline: 1px solid red;
         text-decoration: none;
         text-transform: uppercase;
+            &.nav-anchor-video {
+            outline: blue 1px solid;
+        }
+         &.nav-anchor-opinion {
+            outline: blue 1px solid;
+            display: none;
+        }
+         &.nav-anchor-submit {
+            outline: blue 1px solid;
+            display: none;
+        }
     }
-    
-    #logohead{
-    width: 100%;
-    height:auto;
-    justify-content: space-around;
-        
-        @include breakpoint(1024) { 
-        width: 45%;
-    }  
-        
-    }
-
+    @include breakpoint(1024) { 
+        width: 100%;
+    } 
 }
 
 //DEFAULT STYLES: CAT TAG: ARTS AND CULTURE
@@ -116,10 +118,11 @@ nav#entry-nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
         img{
         width:85%;
         height: auto;   
-}
+        }
 }
 
 .entry-title {
@@ -130,9 +133,9 @@ nav#entry-nav{
     font-weight: 400;
     text-align: left;
     width: 85%;
-     @include breakpoint(1024) { 
-        font-size: 3.125rem;
-        line-height: 4.875rem;
+        @include breakpoint(1024) { 
+            font-size: 3.125rem;
+            line-height: 4.875rem;
     }   
 }
 
@@ -227,10 +230,46 @@ article.category-news{
 
 
 //FOOTER STYLES
+
+
     
 .site-footer{
     background-color: #e5e5e5;
 }
+
+.meta-footer{
+    display: flex;
+    justify-content: center;
+    #footer-logo{
+        width: 85%;
+        height:auto;
+        @include breakpoint(1024) { 
+         width: 45%;
+        }  
+    }
+}
+
+nav#entry-footer{
+        font-family: 'Avenir Next', sans-serif;
+        font-size: 1rem;
+        width:100%;
+        height: 15rem;
+        border-bottom: 1px solid;
+        top: 0;
+        color: pink;
+        justify-content: center;
+        display: inline-grid;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        
+        @include breakpoint(1024) { 
+        width: 100%;
+    }
+}
+
+
     
 .emailinput {
     width: 75%;

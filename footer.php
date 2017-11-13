@@ -14,20 +14,27 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+        <div class="meta-footer">
+            <img id="footer-logo" src="/images/nsfplogofinal.svg" style="">
+        </div>
+                        <nav id="entry-footer">
+				            <a href="">About</a>
+                            <a href="">Contact</a>
+                            <a href="">Submit</a>
+                            <a href="">Masthead</a>
+                            <a href="">Arts &amp Culture</a>
+                            <a href="">News</a>
+                            <a href="">Campus</a>
+                            <a href="">Video</a>
+                            <a href="">Opinion</a>
+            
+                        </nav>
 		
             
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'new-school-free-press' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'new-school-free-press' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'new-school-free-press' ), 'new-school-free-press', '<a href="http://underscores.me/">Underscores.me</a>' );
-                 
-                 
-			?>
-<div id="footersignup">
+			
+			<span class="sep">  </span>
+
+        <div id="footersignup">
 
 
 

@@ -43,15 +43,16 @@
                     <?php
                     endif; ?>
             <!-- .site-branding -->
-
+                   <div class="meta-header">
+                        <img id="header-logo" src="/images/nsfplogofinal.svg" style="">
+                   </div>
                         <nav id="entry-nav">
-				            <a href="" class="nav-anchor">Arts and Culture</a>
-                            <a href="" class="nav-anchor">News</a>
-                            <a href="" class="nav-anchor">Campus</a>
-                            <img id="logohead" src="/images/nsfplogofinal.svg" style="">
-                            <a href="" class="nav-anchor">Video</a>
-                            <a href="" class="nav-anchor">Opinion</a>
-                            <a href="" class="nav-anchor">Submit</a>
+				            <a href="" class="nav-anchor-art">Culture</a>
+                            <a href="" class="nav-anchor-news">News</a>
+                            <a href="" class="nav-anchor-campus">Campus</a>
+                            <a href="" class="nav-anchor-video">Video</a>
+                            <a href="" class="nav-anchor-opinion">Opinion</a>
+                            <a href="" class="nav-anchor-submit">Submit</a>
                         </nav>
 
 	</header><!-- #masthead -->
