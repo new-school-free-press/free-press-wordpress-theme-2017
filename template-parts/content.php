@@ -23,40 +23,56 @@
         }
   
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-            <div class="post-categories">
-                <?php the_category( ' ' ); ?>
-            </div>    
-            <div class="entry-meta-date">
-                <?php the_date('m.d.Y'); ?>
-            </div>
-            <div class="entry-meta-byline">
-                <?php if ( function_exists( 'coauthors_posts_links' ) ) {
-                    coauthors_posts_links();
-                } else {
-                    the_author_posts_link();
-                } ?>
-            </div> 
-            <div class="entry-meta-dek">
-                <?php the_excerpt(); ?>
-            </div>    
-        </div><!-- .entry-meta -->
-        <?php
-        endif; ?>
-   
-<!-- MAIN PAGE PHP -->
-                      <?php 
-        if (has_post_thumbnail()) {
-            if ( is_singular() ) :
-                the_post_thumbnail( 'full' );
-            else:
-                the_post_thumbnail( 'medium' );
-            endif;
-        }
+            <div class="entry-meta">
+                <div class="post-categories">
+                    <?php the_category( ' ' ); ?>
+                </div>    
+                <div class="entry-meta-date">
+                    <?php the_date('m.d.Y'); ?>
+                </div>
+                <div class="entry-meta-byline">
+                    <?php if ( function_exists( 'coauthors_posts_links' ) ) {
+                        coauthors_posts_links();
+                    } else {
+                        the_author_posts_link();
+                    } ?>
+                </div>   
+            </div><!-- .entry-meta -->
+            <?php
+                if ( is_singular() ) {
             ?>
+                <div class="entry-meta-dek">       
+                    <?php
+                        the_excerpt(); // the excerpt, singular  
+                    ?>
+                </div>  
+            <?php  
+                } 
+            ?>
+
+            <?php 
+                //note for claire — if is singular for img size
+                if (has_post_thumbnail()) {
+                    if ( is_singular() ) :
+                        the_post_thumbnail( 'full' );
+                    else:
+                        the_post_thumbnail( 'medium' );
+                endif;
+                }
+            ?>  
         
-<!--MAIN PAGE END-->
-           
+            <?php
+                if ( is_singular() ) {
+                } else {
+            ?>
+                <div class="entry-meta-dek">
+                    <?php  the_excerpt();   ?>
+                </div>
+                <?php } ?>
+            
+            
+        <?php endif; //end get_post_type ?>
+        
 	</header><!-- .entry-header -->
     
     <?php
@@ -91,8 +107,10 @@
 			) );
 		?>
 	</div>
+        
                 <!-- .entry-content -->
     <?php
+        //Sidebar
     }
     if (is_singular()){
      if ( in_category('news') ) {
@@ -100,7 +118,7 @@
             <div class="news-sidebar">sidebar</div>
             </div><!-- / .news-story-wrapper -->
         <?php
-                
+    //end sidebar
                                 }  
                     }
         ?>              
