@@ -54,6 +54,8 @@
             endif;
         }
             ?>
+        
+<!--MAIN PAGE END-->
            
 	</header><!-- .entry-header -->
     
@@ -63,9 +65,10 @@
             <div class="news-story-wrapper">
     <?php
             }
+                
+	if (is_singular()){
     ?>
-          
-	<div class="entry-content">
+                <div class="entry-content">
         
 
 		<?php
@@ -87,15 +90,19 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
-                
-            <?php if ( in_category('news') ) {
+	</div>
+                <!-- .entry-content -->
+    <?php
+    }
+    if (is_singular()){
+     if ( in_category('news') ) {
             // news category template ?>
             <div class="news-sidebar">sidebar</div>
             </div><!-- / .news-story-wrapper -->
         <?php
                 
-            }            
+                                }  
+                    }
         ?>              
                 
     </div><!--/ news-storry-wrapper-->
