@@ -47,23 +47,47 @@ $typekit-body: "adobe-caslon-pro";
 //
 body.home{
     .entry-header{
-       width: 50%; 
+        width: 100%; 
+        margin-bottom:50px;
+        @include breakpoint(1024) { 
+        width: 50%;
+        }  
+        img{
+        width:100%;
+        height: auto;
+        @include breakpoint(1024) { 
+        width: 85%;
+        }
+        
+    }
     }
     .entry-title{
         color:$base;
         font-family: $typekit-hed;
-        font-size:1.5rem;
+        font-size:2rem;
         line-height: 2rem;
         font-weight: 400;
+        width: 90%;
+        padding-bottom: .2em;
+        @include breakpoint(1024) { 
+        font-size:1.5rem;
+        }
     }
     a{
         color:$base;
         text-decoration: none;
     }
     .entry-meta-dek{
+        width: 90%;
         color:$base;
         font-family:$typekit-body;
         padding-top: .5em;
+        font-size: 1rem;
+        line-height: 20px;
+        @include breakpoint(1024) { 
+        font-size: 1rem;
+        width: 85%;
+        }
     }
 }
 

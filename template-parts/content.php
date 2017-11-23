@@ -65,10 +65,12 @@
                 if ( is_singular() ) {
                 } else {
             ?>
+        
                 <div class="entry-meta-dek">
                     <?php  the_excerpt();   ?>
                 </div>
                 <?php } ?>
+            
             
             
         <?php endif; //end get_post_type ?>
