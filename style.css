@@ -126,12 +126,18 @@ body.home .entry-meta-dek {
   width: 90%;
   color: #333;
   font-family: "adobe-caslon-pro";
-  padding-top: .5em;
-  font-size: 1rem;
-  line-height: 20px; }
+  padding-top: .5e0m;
+  font-size: 1.3rem;
+  line-height: 26px; }
   @media screen and (min-width: 64em) {
     body.home .entry-meta-dek {
       font-size: 1rem;
+      width: 85%; } }
+body.home .entry-meta {
+  width: 90%;
+  border-top: none; }
+  @media screen and (min-width: 64em) {
+    body.home .entry-meta {
       width: 85%; } }
 
 .site-header {
@@ -263,6 +269,15 @@ a.author.url.fn:hover {
 .entry-meta-date {
   display: inline-block;
   padding-bottom: 10px; }
+
+.entry-meta-dek {
+  width: 85%;
+  font-size: 1.3rem;
+  line-height: 26px;
+  font-style: italic;
+  font-family: "adobe-caslon-pro";
+  color: #333;
+  padding-bottom: 15px; }
 
 .news-story-wrapper {
   display: flex;

@@ -23,6 +23,10 @@
         }
   
 		if ( 'post' === get_post_type() ) : ?>
+        
+            <?php
+                if ( is_singular() ) {
+            ?>
             <div class="entry-meta">
                 <div class="post-categories">
                     <?php the_category( ' ' ); ?>
@@ -38,14 +42,12 @@
                     } ?>
                 </div>   
             </div><!-- .entry-meta -->
-            <?php
-                if ( is_singular() ) {
-            ?>
                 <div class="entry-meta-dek">       
                     <?php
                         the_excerpt(); // the excerpt, singular  
                     ?>
                 </div>  
+        
             <?php  
                 } 
             ?>
@@ -61,10 +63,25 @@
                 }
             ?>  
         
-            <?php
+            <?php //else statement - non singular display meta info
                 if ( is_singular() ) {
                 } else {
             ?>
+                <div class="entry-meta">
+                <div class="post-categories">
+                    <?php the_category( ' ' ); ?>
+                </div>    
+                <div class="entry-meta-date">
+                    <?php the_date('m.d.Y'); ?>
+                </div>
+                <div class="entry-meta-byline">
+                    <?php if ( function_exists( 'coauthors_posts_links' ) ) {
+                        coauthors_posts_links();
+                    } else {
+                        the_author_posts_link();
+                    } ?>
+                </div>   
+            </div><!-- .entry-meta -->  
         
                 <div class="entry-meta-dek">
                     <?php  the_excerpt();   ?>
