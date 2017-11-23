@@ -54,9 +54,10 @@ body.home{
         }  
             img{
             width:100%;
-            height: auto;
+            height: 310px;
             @include breakpoint(1024) { 
             width: 85%;
+            height: auto;
             }
             }
     }
