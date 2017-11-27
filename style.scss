@@ -54,7 +54,6 @@ body.home{
         }  
             img{
             width:100%;
-            height: 310px;
             @include breakpoint(1024) { 
             width: 85%;
             height: auto;
@@ -166,6 +165,13 @@ nav#entry-nav{
    
 }
 
+.sidebar{
+    @include breakpoint(1024) { 
+    width: 60%;
+    background-color: orange;
+    }
+}
+
 .entry-header{
     display: -webkit-flex;
     justify-content: center;
@@ -273,24 +279,31 @@ cursor: pointer;
 
 //NEWS STYLES
 .news-story-wrapper{
+    display: block;
+    width: 85%;
+    @include breakpoint(1024) { 
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    }
 }
+
 
 article.category-news{
+    .sidebar{
+        @include breakpoint(1024) { 
+        width: 45%;
+        padding-left: 10px;
+        background-color: white;
+        outline-style: dashed;
+        }
+    }
     .entry-content{
         text-align: left;
-        width:85%;
-            @include breakpoint(1024) { 
-            width:50%;   
-            }
-        }    
-}
-
-.news-sidebar{
-        width: 35%;
-        background-color: orange;
-
+        width:100%;
+        @include breakpoint(1024) { 
+        width:80%;   
+        }
+    }    
 }
 
 
