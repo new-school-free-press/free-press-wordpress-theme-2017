@@ -23,38 +23,75 @@
         }
   
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-            <div class="post-categories">
-                <?php the_category( ' ' ); ?>
-            </div>    
-            <div class="entry-meta-date">
-                <?php the_date('m.d.Y'); ?>
-            </div>
-            <div class="entry-meta-byline">
-                <?php if ( function_exists( 'coauthors_posts_links' ) ) {
-                    coauthors_posts_links();
-                } else {
-                    the_author_posts_link();
-                } ?>
-            </div> 
-            <div class="entry-meta-dek">
-                <?php the_excerpt(); ?>
-            </div>    
-        </div><!-- .entry-meta -->
-        <?php
-        endif; ?>
-   
-<!-- MAIN PAGE PHP -->
-                      <?php 
-        if (has_post_thumbnail()) {
-            if ( is_singular() ) :
-                the_post_thumbnail( 'full' );
-            else:
-                the_post_thumbnail( 'medium' );
-            endif;
-        }
+        
+            <?php
+                if ( is_singular() ) {
             ?>
-           
+            <div class="entry-meta">
+                <div class="post-categories">
+                    <?php the_category( ' ' ); ?>
+                </div>    
+                <div class="entry-meta-date">
+                    <?php the_date('m.d.Y'); ?>
+                </div>
+                <div class="entry-meta-byline">
+                    <?php if ( function_exists( 'coauthors_posts_links' ) ) {
+                        coauthors_posts_links();
+                    } else {
+                        the_author_posts_link();
+                    } ?>
+                </div>   
+            </div><!-- .entry-meta -->
+                <div class="entry-meta-dek">       
+                    <?php
+                        the_excerpt(); // the excerpt, singular  
+                    ?>
+                </div>  
+        
+            <?php  
+                } 
+            ?>
+
+            <?php 
+                //note for claire — if is singular for img size
+                if (has_post_thumbnail()) {
+                    if ( is_singular() ) :
+                        the_post_thumbnail( 'full' );
+                    else:
+                        the_post_thumbnail( 'medium' );
+                endif;
+                }
+            ?>  
+        
+            <?php //else statement - non singular display meta info
+                if ( is_singular() ) {
+                } else {
+            ?>
+                <div class="entry-meta">
+                <div class="post-categories">
+                    <?php the_category( ' ' ); ?>
+                </div>    
+                <div class="entry-meta-date">
+                    <?php the_date('m.d.Y'); ?>
+                </div>
+                <div class="entry-meta-byline">
+                    <?php if ( function_exists( 'coauthors_posts_links' ) ) {
+                        coauthors_posts_links();
+                    } else {
+                        the_author_posts_link();
+                    } ?>
+                </div>   
+            </div><!-- .entry-meta -->  
+        
+                <div class="entry-meta-dek">
+                    <?php  the_excerpt();   ?>
+                </div>
+                <?php } ?>
+            
+            
+            
+        <?php endif; //end get_post_type ?>
+        
 	</header><!-- .entry-header -->
     
     <?php
@@ -63,9 +100,10 @@
             <div class="news-story-wrapper">
     <?php
             }
+                
+	if (is_singular()){
     ?>
-          
-	<div class="entry-content">
+                <div class="entry-content">
         
 
 		<?php
@@ -87,15 +125,21 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
-                
-            <?php if ( in_category('news') ) {
+	</div>
+        
+                <!-- .entry-content -->
+    <?php
+        //Sidebar
+    }
+    if (is_singular()){
+     if ( in_category('news') ) {
             // news category template ?>
             <div class="news-sidebar">sidebar</div>
             </div><!-- / .news-story-wrapper -->
         <?php
-                
-            }            
+    //end sidebar
+                                }  
+                    }
         ?>              
                 
     </div><!--/ news-storry-wrapper-->
