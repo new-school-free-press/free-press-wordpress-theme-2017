@@ -132,13 +132,13 @@
         //Sidebar
     }
     if (is_singular()){
-     if ( in_category('news') ) {
+    
             // news category template ?>
-            <div class="news-sidebar">sidebar</div>
+            <div class="sidebar">sidebar</div>
             </div><!-- / .news-story-wrapper -->
         <?php
     //end sidebar
-                                }  
+                                
                     }
         ?>              
                 
