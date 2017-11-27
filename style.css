@@ -125,10 +125,13 @@ body.home .entry-meta-dek {
 #header-logo {
   width: 100%;
   height: auto;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
   @media screen and (min-width: 64em) {
     #header-logo {
-      width: 45%; } }
+      position: relative;
+      top: 3rem; } }
 
 nav#entry-nav {
   font-family: 'Avenir Next', sans-serif;
@@ -137,27 +140,19 @@ nav#entry-nav {
   height: 5em;
   border-bottom: 1px solid;
   top: 0;
-  color: pink;
   display: flex;
   justify-content: space-around;
   text-align: center; }
   nav#entry-nav a[class^="nav-anchor-"] {
     justify-content: space-between;
     color: #333;
-    outline: 1px solid red;
     text-decoration: none;
     text-transform: uppercase; }
-    nav#entry-nav a[class^="nav-anchor-"].nav-anchor-video {
-      outline: blue 1px solid; }
-    nav#entry-nav a[class^="nav-anchor-"].nav-anchor-opinion {
-      outline: blue 1px solid;
+    nav#entry-nav a[class^="nav-anchor-"].nav-anchor-opinion, nav#entry-nav a[class^="nav-anchor-"].nav-anchor-submit {
       display: none; }
-    nav#entry-nav a[class^="nav-anchor-"].nav-anchor-submit {
-      outline: blue 1px solid;
-      display: none; }
-  @media screen and (min-width: 64em) {
-    nav#entry-nav {
-      width: 100%; } }
+      @media screen and (min-width: 37.5em) {
+        nav#entry-nav a[class^="nav-anchor-"].nav-anchor-opinion, nav#entry-nav a[class^="nav-anchor-"].nav-anchor-submit {
+          display: flex; } }
 
 .article-content {
   display: -webkit-flex;
@@ -265,7 +260,9 @@ article.category-news .entry-content {
   justify-content: center; }
   .meta-footer #footer-logo {
     width: 85%;
-    height: auto; }
+    height: auto;
+    padding-left: 4rem;
+    padding-right: 4rem; }
     @media screen and (min-width: 64em) {
       .meta-footer #footer-logo {
         width: 45%; } }
@@ -281,8 +278,10 @@ nav#entry-footer {
   justify-content: center;
   display: inline-grid;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase; }
+  nav#entry-footer a {
+    text-decoration: none;
+    color: #000000; }
   @media screen and (min-width: 64em) {
     nav#entry-footer {
       width: 100%; } }

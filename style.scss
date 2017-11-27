@@ -56,10 +56,12 @@ body.home{
         line-height: 2rem;
         font-weight: 400;
     }
+    
     a{
         color:$base;
         text-decoration: none;
     }
+    
     .entry-meta-dek{
         color: $meta-dark;
         font-family:$typekit-body;
@@ -85,9 +87,12 @@ body.home{
     width: 100%;
     height:auto;
     justify-content: center;
-    @include breakpoint(1024) { 
-        width: 45%;
-    }  
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+        @include breakpoint(1024) {
+            position:relative;
+            top: 3rem;
+        }
 }
 
 nav#entry-nav{
@@ -97,31 +102,21 @@ nav#entry-nav{
     height: 5em;
     border-bottom: 1px solid;
     top: 0;
-    color: pink;
     display: flex;
     justify-content: space-around;
-    text-align: center;
+    text-align: center; 
     a[class^="nav-anchor-"] {
         justify-content: space-between;
         color:$base;
-        outline: 1px solid red;
         text-decoration: none;
-        text-transform: uppercase;
-            &.nav-anchor-video {
-            outline: blue 1px solid;
-        }
-         &.nav-anchor-opinion {
-            outline: blue 1px solid;
+        text-transform: uppercase;     
+        &.nav-anchor-opinion, &.nav-anchor-submit {
             display: none;
-        }
-         &.nav-anchor-submit {
-            outline: blue 1px solid;
-            display: none;
+            @include breakpoint(600) { 
+                display: flex;
+            } 
         }
     }
-    @include breakpoint(1024) { 
-        width: 100%;
-    } 
 }
 
 //DEFAULT STYLES: CAT TAG: ARTS AND CULTURE
@@ -141,10 +136,10 @@ nav#entry-nav{
     align-items: center;
     flex-wrap: wrap;
     
-        img{
+    img{
         width:85%;
-        height: auto;   
-        }
+        height: auto;
+    }
 }
 
 .entry-title {
@@ -235,6 +230,7 @@ cursor: pointer;
     display: flex;
     justify-content: center; 
 }
+
 article.category-news{
     .entry-content{
         text-align: left;
@@ -244,6 +240,7 @@ article.category-news{
             }
         }    
 }
+
 .news-sidebar{
         width: 35%;
         background-color: orange;
@@ -265,6 +262,8 @@ article.category-news{
     #footer-logo{
         width: 85%;
         height:auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
         @include breakpoint(1024) { 
          width: 45%;
         }  
@@ -282,8 +281,12 @@ nav#entry-footer{
         justify-content: center;
         display: inline-grid;
         text-align: center;
-        text-decoration: none;
         text-transform: uppercase;
+    
+    a{
+        text-decoration: none;
+        color: #000000
+    }
         
         
         @include breakpoint(1024) { 
